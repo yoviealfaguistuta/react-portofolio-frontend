@@ -59,14 +59,6 @@ export const ListOther = (other) => {
                 <Fragment key={index}>
                     <div className="col-md-3 ">
                         <h6 className='sub-title-main'>{item.name}</h6>
-                        {/* <div className="progress-bars standard transparent-bars" data-animate-on-scroll="on">
-                            <h5 className="bold text-left">{item.name}</h5>
-                            <div className="progress" data-percent={item.percentage + "%"}>
-                                <div className="progress-bar" style={{width: item.percentage + "%"}}>
-                                    <span className="progress-bar-tooltip">{item.percentage + "%"}</span>
-                                </div>
-                            </div>
-                        </div> */}
                     </div>
                 </Fragment>
             )

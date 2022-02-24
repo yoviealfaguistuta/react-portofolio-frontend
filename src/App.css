@@ -130,3 +130,25 @@
 .mb-wd {
   margin-bottom: 20px;
 }
+
+.mt-testimonial {
+  margin-bottom: 120px;
+  /* text-align: left; */
+}
+
+.amc {
+  margin-top: 100px !important;
+}
+
+.opacity-open {
+  opacity: 1;
+}
+
+.vossen-portfolio > div {
+  opacity: 1;
+}
+
+.carousel .thumb {
+  border: 1px solid #34eea0;
+  border-radius: 6px;
+}

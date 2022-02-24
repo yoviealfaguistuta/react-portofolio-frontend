@@ -23,12 +23,6 @@ export const Main = () => {
     };
 
     useEffect(() => {
-        
-        window.vossenHeader();
-        window.twitterFeedSliderInit()
-        window.progressBars();
-        window.sliderOwl();
-        
         fetchData();
     }, []);
 

@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-
-
 import './assets/css/init.css';
 import './assets/css/ion-icons.min.css';
 import './assets/css/etline-icons.min.css';

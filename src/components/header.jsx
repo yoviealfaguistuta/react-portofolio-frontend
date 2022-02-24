@@ -4,7 +4,7 @@ import imgLogoDark from '../assets/images/logo/logoyovie-dark.png'
 
 export const Header = () => {
     return <Fragment>
-        <nav className="navbar nav-down" data-fullwidth="true" data-menu-style="transparent" data-animation="shrink">{/* Styles: light, dark, transparent | Animation: hiding, shrink */}
+        <nav className="navbar nav-down" data-fullwidth="true" data-menu-style="transparent" data-animation="shrink">
             <div className="container">
                 <div className="navbar-header">
                     <div className="container">

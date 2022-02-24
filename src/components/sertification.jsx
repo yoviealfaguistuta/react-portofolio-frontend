@@ -1,16 +1,19 @@
 import React, { Fragment, useEffect, useState } from 'react'
+import ContentLoader from "react-content-loader"
+import axios from 'axios';
+import { PublicImageUrl, ServeUrl } from '../config/serve';
 
-export const Sertification = ({sertifikat}) => {
-    if (sertifikat != null) {
-        console.log('sertifikat :>> ', sertifikat[0]); 
-    }
-    
+export const Sertification = () => {
+    let [listData, setListData] = useState(null);
+    const fetchData = () => {
+        axios.get(ServeUrl + 'get_certificate').then(res => {
+            setListData(res.data.data.sertifikat);
+        })
+    };
+
     useEffect(() => {
-        window.testimonialSlider();
-        setTimeout(() => {
-            window.teamSlider();
-        }, 2000);
-    }, [])
+        fetchData()
+    }, []);
 
     return (
         <Fragment>
@@ -23,9 +26,9 @@ export const Sertification = ({sertifikat}) => {
                     </div>
                     <div className="portfolio" data-gap={20}>
                         <div className="vossen-portfolio">
-                            {sertifikat && sertifikat.map((item, index) => {
+                        {listData != null ? listData.map((item, index) => {
                                 return (
-                                    <a className='cursor-normal' href={item.images} target="_blank" rel="noreferrer" key={index} data-filter="android">
+                                    <a className='cursor-normal' href={PublicImageUrl + item.images} target="_blank" rel="noreferrer" key={index} data-filter="android">
                                         <div className="col-md-4 col-sm-6" style={{marginBottom: 40}}>
                                             <div className="portfolio-item">
                                                 <div className="item-caption">
@@ -33,13 +36,14 @@ export const Sertification = ({sertifikat}) => {
                                                     <p>{item.description}</p>
                                                 </div>
                                                 <div className="item-image">
-                                                    <img alt="#" src={item.images} width="370" height="262" />
+                                                    <img alt="#" src={PublicImageUrl + item.images} width="370" height="262" />
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 )
-                            })}
+                            }): 
+                            <LoadingCertificate />}
                         </div>
                     </div>
                 </div>
@@ -50,3 +54,27 @@ export const Sertification = ({sertifikat}) => {
 };
 
 export default Sertification;
+
+
+export const LoadingCertificate = () => {
+    
+    function createLoadingTemp() {
+        let element = [];
+        for (let i = 0; i < 9; i++) {
+            element.push(
+                <div key={i} className="col-md-4 col-sm-6">
+                    <ContentLoader speed={2}  width={360}  height={360} viewBox="0 0 360 360" backgroundColor="#111111" foregroundColor="#000000">
+                        <rect x="0" y="60" rx="2" ry="2" width="100%" height="100%" />
+                    </ContentLoader>
+                </div>
+            )
+        }
+        return element;
+    }
+    
+    return (
+        <Fragment>
+            {createLoadingTemp()}
+        </Fragment>
+    )
+};

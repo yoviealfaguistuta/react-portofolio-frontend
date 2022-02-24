@@ -1,14 +1,8 @@
 import './App.css';
 import { Main } from './components/main';
-import React, { useEffect } from 'react'
+import React from 'react'
 
 function App() {
-  useEffect(() => {
-    // window.teamSlider();
-    return () => {
-      // console.clear();
-    }
-  }, [])
 
   return (
     <div className="App">
