@@ -1,11 +1,13 @@
-import React, { Fragment } from 'react'
-import ImageProfile from '../assets/images/YovieAlfaguistuta.jfif'
-import Testt from '../assets/images/test.png'
-import Instagram from '../assets/images/logo-connect/instagram.png'
-import Github from '../assets/images/logo-connect/github.png'
-import Email from '../assets/images/logo-connect/email.png'
-import Location from '../assets/images/logo-connect/location.png'
-import Phone from '../assets/images/logo-connect/phone.png'
+import React, { Fragment, useEffect, useState } from 'react';
+import ImageProfile from '../assets/images/YovieAlfaguistuta.jfif';
+import Testt from '../assets/images/test.png';
+import Instagram from '../assets/images/logo-connect/instagram.png';
+import Github from '../assets/images/logo-connect/github.png';
+import Email from '../assets/images/logo-connect/email.png';
+import Location from '../assets/images/logo-connect/location.png';
+import Phone from '../assets/images/logo-connect/phone.png';
+import axios from 'axios';
+import { SERVER_URL } from 'constant/url';
 
 export const ListAbout = ({ attr }) => {
     return attr.map((item, index) =>
@@ -31,14 +33,30 @@ export const ListAbout = ({ attr }) => {
     )
 }
 
-export const About = ({ data, attr }) => {
+export const About = () => {
+    const [DataResponse, setDataResponse] = useState(null);
+    useEffect(() => {
+        axios.get(SERVER_URL + '/about').then(function (response) {
+            if (response.data.status === true) {
+                setDataResponse(response.data.body.about);
+            }
+        }).catch(function (error) {
+            
+        }).then(function () {
+            
+        }); 
+        return () => {
+            setDataResponse(null);
+        };
+    }, []);
+
     return <Fragment>
         <section id="about" className="bg-dark pt100 pb100">
             <div className="container">
                 <div className="row">
                     <div className="col-md-7 text-left centered-about">
                         <h2><strong className='text-white'>About Me</strong></h2><br />
-                        {data != null ? <p className="lead my-msg-about">{data.message}</p> : ''}
+                        {DataResponse != null ? <p className="lead my-msg-about">{DataResponse}</p> : ''}
                     </div>
                     <div className="col-md-5 centered-image-about">
                         <img className='image-about' src={ImageProfile} alt="Yovie Alfaguistuta" />

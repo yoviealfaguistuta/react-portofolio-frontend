@@ -4,40 +4,49 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import ContentLoader from "react-content-loader"
 import axios from 'axios';
-import { PublicImageUrl, ServeUrl } from '../config/serve';
+import { SERVER_IMAGE_URL, SERVER_URL } from 'constant/url';
 
 export const PortfolioDetail = () => {
     let { id } = useParams();
 
-    let [listData, setListData] = useState(null);
-    
+    const [DataResponse, setDataResponse] = useState(null);
 
     useEffect(() => {
-        axios.get(ServeUrl + 'get_portfolio/' + id).then(res => {
-            setListData(res.data.data.portfolio);
-        })
+        axios.get(SERVER_URL + '/portofolio/detail/' + id).then(function (response) {
+            if (response.data.status === true) {
+                setDataResponse(response.data.body);
+            }
+        }).catch(function (error) {
+            
+        }).then(function () {
+            
+        }); 
+        return () => {
+            setDataResponse(null);
+        };
     }, [id]);
 
     return (
         <Fragment>
-            {(listData != null) ?
+            {(DataResponse != null) ?
                 <section className="bg-dark pt140 pb50 text-left">
                     <div className="container">
                         <div className="row">
                             <div className="col-md-12 text-center">
-                                <h2 className='text-white'><strong>{listData.title}</strong></h2>
-                                <p className="lead">{listData.description}</p>
+                                <h2 className='text-white'><strong>{DataResponse.title}</strong></h2>
+                                <p className="lead">{DataResponse.descriptions}</p>
                             </div>
                             <div className="col-md-8 mt20 mb40">
                                 <div className="carousel lightbox" data-autoplay="false" data-speed={4000} data-touch-drag="true" data-loop="false">
                                 <Carousel showStatus={false} showIndicators={false}>
-                                    {listData.images && listData.images.map((item, index) => {
-                                        return (
-                                            <div>
-                                                <img src={PublicImageUrl + item.images} alt={listData.title} />
-                                            </div>
-                                        )
-                                    })
+                                    {
+                                        DataResponse.images && DataResponse.images.map((item, index) => {
+                                            return (
+                                                <div key={index}>
+                                                    <img src={SERVER_IMAGE_URL + item.images} alt={DataResponse.title} />
+                                                </div>
+                                            )
+                                        })
                                     }
                                     </Carousel>
                                 </div>
@@ -45,44 +54,56 @@ export const PortfolioDetail = () => {
                             <div className="col-md-4 project-sidebar">
                                 <div>
                                     <h4 className='text-white'><strong>Project Info</strong></h4>
-                                    <p>{listData.project_info}</p>
+                                    <p>{DataResponse.project_info}</p>
                                 </div>
                                 <div className="project-info">
                                     <div>
                                         <p className='text-white'>Platform</p>
                                     </div>
                                     <div className="mbb-2">
-                                        <span className="desc-portfolio">{listData.platform}</span>
+                                        <span className="desc-portfolio">{DataResponse.platform}</span>
                                     </div>
                                     <div>
                                         <p className='text-white'>Programming Language</p>
                                     </div>
                                     <div className="mbb-2">
-                                        <span className="desc-portfolio">{listData.languages}</span>
+                                        <span className="desc-portfolio">{DataResponse.languages}</span>
                                     </div>
                                     <div>
                                         <p className='text-white'>Database</p>
                                     </div>
                                     <div className="mbb-2">
-                                        <span className="desc-portfolio">{listData.database}</span>
+                                        <span className="desc-portfolio">{DataResponse.databases}</span>
                                     </div>
                                     <div>
                                         <p className='text-white'>Tanggal</p>
                                     </div>
                                     <div className="mbb-2">
-                                        <span className="desc-portfolio">{listData.date}</span>
+                                        <span className="desc-portfolio">{DataResponse.dates}</span>
                                     </div>
                                     <div>
                                         <p className='text-white'>Url</p>
                                     </div>
                                     <div className="mbb-2">
-                                        <span className="desc-portfolio">{listData.url}</span>
+                                        <span className="desc-portfolio">
+                                            <a target={'_blank'} rel="noreferrer" href={DataResponse.urls}>
+                                                {DataResponse.urls}
+                                            </a>
+                                        </span>
                                     </div>
                                     <div>
                                         <p className='text-white'>Source Code</p>
                                     </div>
                                     <div className="mbb-2">
-                                        <span className="desc-portfolio">{listData.source_code}</span>
+                                        <span className="desc-portfolio">
+                                            {
+                                                (DataResponse.source_code.includes("http") || DataResponse.source_code.includes("https")) ?
+                                                    <a target={'_blank'} rel="noreferrer" href={DataResponse.source_code}>
+                                                        {DataResponse.source_code}
+                                                    </a>
+                                                : DataResponse.source_code
+                                            }
+                                        </span>
                                     </div>
                                 </div>
                             </div>

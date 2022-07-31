@@ -3,21 +3,27 @@ import { Link } from 'react-router-dom';
 import { Image, Shimmer } from 'react-shimmer'
 import ContentLoader from "react-content-loader"
 import axios from 'axios';
-import { ServeUrl, PublicImageUrl } from '../config/serve';
+import { SERVER_IMAGE_URL, SERVER_URL } from 'constant/url';
 
 export const Portfolio = () => {
 
-    let [listData, setListData] = useState(null);
+    const [DataResponse, setDataResponse] = useState(null);
     const [OpacityOpen, setOpacityOpen] = useState('vossen-portfolio opacity-open');
-    const fetchData = () => {
-        axios.get(ServeUrl + 'get_portfolio').then(res => {
-            setOpacityOpen('vossen-portfolio')
-            setListData(res.data.data.portfolio);
-        })
-    };
 
     useEffect(() => {
-        fetchData()
+        axios.get(SERVER_URL + '/portofolio/list').then(function (response) {
+            if (response.data.status === true) {
+                setOpacityOpen('vossen-portfolio')
+                setDataResponse(response.data.body);
+            }
+        }).catch(function (error) {
+            
+        }).then(function () {
+            
+        }); 
+        return () => {
+            setDataResponse(null);
+        };
     }, []);
 
     return <Fragment>
@@ -30,17 +36,17 @@ export const Portfolio = () => {
                     </div>
                     <div className="portfolio" data-gap={20}>
                         <div className={OpacityOpen}>
-                            {listData != null ? listData.map((item, index) => {
+                            {DataResponse != null ? DataResponse.map((item, index) => {
                                 return (
                                     <Link to={"/detail/" + item.id} key={index} data-filter="android">
                                         <div className="col-md-4 col-sm-6" style={{marginBottom: 40}}>
                                             <div className="portfolio-item">
                                                 <div className="item-caption">
                                                     <h4>{item.title}</h4>
-                                                    <p>{item.description}</p>
+                                                    <p>{item.descriptions}</p>
                                                 </div>
                                                 <div className="item-image">
-                                                    <Image alt="#" src={PublicImageUrl + item.images[0].images} width="370" height="262" fallback={<Shimmer width={800} height={600} />} />
+                                                    <Image alt="#" src={SERVER_IMAGE_URL + item.images} width="370" height="262" fallback={<Shimmer width={800} height={600} />} />
                                                 </div>
                                             </div>
                                         </div>
@@ -64,7 +70,7 @@ export const DescriptionProject = (params) => {
             <section id="testimonials" className="parallax pt100 pb90" data-overlay-dark={9}>
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-12 pb20">
+                        <div className="col-md-12 pb20 text-center">
                             <h2 className='text-white-real'>This is my strength<br /> when <strong className='text-white'>Making</strong> a software</h2>
                         </div>
                         <div className="col-md-12">

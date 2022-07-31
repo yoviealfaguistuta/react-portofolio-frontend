@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
-import imgLogoLight from '../assets/images/logo/logoyovie-light.png'
-import imgLogoDark from '../assets/images/logo/logoyovie-dark.png'
+import imgLogoLight from 'assets/images/logo/logoyovie-light.png'
+import imgLogoDark from 'assets/images/logo/logoyovie-dark.png'
 
 export const Header = () => {
     return <Fragment>

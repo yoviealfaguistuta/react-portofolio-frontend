@@ -1,18 +1,24 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import ContentLoader from "react-content-loader"
 import axios from 'axios';
-import { PublicImageUrl, ServeUrl } from '../config/serve';
+import { SERVER_IMAGE_URL, SERVER_URL } from 'constant/url';
 
 export const Sertification = () => {
-    let [listData, setListData] = useState(null);
-    const fetchData = () => {
-        axios.get(ServeUrl + 'get_certificate').then(res => {
-            setListData(res.data.data.sertifikat);
-        })
-    };
+    const [DataResponse, setDataResponse] = useState(null);
 
     useEffect(() => {
-        fetchData()
+        axios.get(SERVER_URL + '/certificate').then(function (response) {
+            if (response.data.status === true) {
+                setDataResponse(response.data.body);
+            }
+        }).catch(function (error) {
+            
+        }).then(function () {
+            
+        }); 
+        return () => {
+            setDataResponse(null);
+        };
     }, []);
 
     return (
@@ -26,9 +32,9 @@ export const Sertification = () => {
                     </div>
                     <div className="portfolio" data-gap={20}>
                         <div className="vossen-portfolio">
-                        {listData != null ? listData.map((item, index) => {
+                        {DataResponse != null ? DataResponse.map((item, index) => {
                                 return (
-                                    <a className='cursor-normal' href={PublicImageUrl + item.images} target="_blank" rel="noreferrer" key={index} data-filter="android">
+                                    <a className='cursor-normal' href={SERVER_IMAGE_URL + item.images} target="_blank" rel="noreferrer" key={index} data-filter="android">
                                         <div className="col-md-4 col-sm-6" style={{marginBottom: 40}}>
                                             <div className="portfolio-item">
                                                 <div className="item-caption">
@@ -36,7 +42,7 @@ export const Sertification = () => {
                                                     <p>{item.description}</p>
                                                 </div>
                                                 <div className="item-image">
-                                                    <img alt="#" src={PublicImageUrl + item.images} width="370" height="262" />
+                                                    <img alt="#" src={SERVER_IMAGE_URL + item.images} width="370" height="262" />
                                                 </div>
                                             </div>
                                         </div>

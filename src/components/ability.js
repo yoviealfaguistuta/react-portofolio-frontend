@@ -111,7 +111,7 @@ export const Ability = ({ ability }) => {
             <div className="background-image">
                 <img src="img/backgrounds/bg-2.jpg" alt="#" />
             </div>
-            <div className="container">
+            <div className="container text-center">
                 <h2 className='text-white-real'>Some of Tools or Technology<br /><strong className='text-white'> Which I Usually Use</strong></h2>
                 <div className="centered-framework">
                     <div className="card-body text-center re-layout">
@@ -136,7 +136,7 @@ export const Ability = ({ ability }) => {
                     <div className="card-body text-center re-layout">
                         <a href="https://go.dev/" className='linked-skills' target={'blank'} rel='noreferrer'>
                             <img width={100} height={100} alt="Go - Build fast, reliable, and efficient software at scale" src={GolangImage} />
-                            <h4 className='title-framework'>Go Language</h4>
+                            <h4 className='title-framework'>Go</h4>
                         </a>
                     </div>
                 </div>
@@ -197,9 +197,6 @@ export const Ability = ({ ability }) => {
         <section id="who-we-are" className="parallax pt20 pb40" data-overlay-dark={8}>
             <div className="background-image">
                 <img src="img/backgrounds/bg-2.jpg" alt="#" />
-            </div>
-            <div className="container">
-                <h4>And much more ..</h4>
             </div>
         </section>
     </Fragment>

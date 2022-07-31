@@ -191,6 +191,6 @@ function teamSlider() {
     });
 }
 // teamSlider()
-setTimeout(() => {
-    // console.clear();
-}, 2000);
+// setTimeout(() => {
+//     // console.clear();
+// }, 2000);
