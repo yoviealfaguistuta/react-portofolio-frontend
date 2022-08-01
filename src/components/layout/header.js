@@ -8,12 +8,12 @@ export const Header = () => {
             <div className="container">
                 <div className="navbar-header">
                     <div className="container">
-                        <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        {/* <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                             <span className="sr-only">Toggle navigation</span>
                             <span className="icon-bar top-bar" />
                             <span className="icon-bar middle-bar" />
                             <span className="icon-bar bottom-bar" />
-                        </button>
+                        </button> */}
                         <a className="navbar-brand to-top" href="/#"><img width={200} src={imgLogoLight} className="logo-light logo-nav" alt="#" /><img width={200} src={imgLogoDark} className="logo-dark logo-nav" alt="#" /></a>
                     </div>
                 </div>

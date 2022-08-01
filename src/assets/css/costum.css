@@ -49,6 +49,30 @@ code {
     height: 100%;
 }
 
+@media screen and (max-width: 800px) {
+    .centered-cd {
+        display: flex;
+        margin-top: 70px;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .rest-skc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        margin: 20px;
+    }
+}
+
+.navbar-header {
+    background: black;
+}
+
 .hovered-rotate {
     -webkit-transition: 0.4s ease-out;
     -moz-transition: 0.4s ease-out;
