@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Layout } from 'components/layout';
 import { Banner } from 'components/banner';
 import { About } from 'components/about';

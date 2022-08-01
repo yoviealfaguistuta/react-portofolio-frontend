@@ -10,9 +10,18 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Home } from 'pages';
 import { PortfolioDetail } from 'pages/portofolio-detail';
+import * as Sentry from "@sentry/react";
+import { BrowserTracing } from "@sentry/tracing";
 
 const container = document.getElementById('root');
 const root = createRoot(container);
+
+Sentry.init({
+    dsn: "https://9701bffc94fd43a0aa001263d16a36a9@o1342163.ingest.sentry.io/6615968",
+    integrations: [new BrowserTracing()],
+    tracesSampleRate: 1.0,
+});
+
 root.render(
     <BrowserRouter>
         <Routes>

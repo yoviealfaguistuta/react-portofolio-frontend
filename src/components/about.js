@@ -56,10 +56,10 @@ export const About = () => {
                 <div className="row">
                     <div className="col-md-7 text-left centered-about">
                         <h2><strong className='text-white'>About Me</strong></h2><br />
-                        {DataResponse != null ? <p className="lead my-msg-about">{DataResponse}</p> : ''}
+                        {DataResponse != null ? <p className="lead my-msg-about text-real-white">{DataResponse}</p> : ''}
                     </div>
                     <div className="col-md-5 centered-image-about">
-                        <img className='image-about' src={ImageProfile} alt="Yovie Alfaguistuta" />
+                        <img className='image-about' src={ImageProfile} alt="Yovie Alfa Guistuta" />
                     </div>
                 </div>
             </div>

@@ -34,15 +34,15 @@ export const Sertification = () => {
                         <div className="vossen-portfolio">
                         {DataResponse != null ? DataResponse.map((item, index) => {
                                 return (
-                                    <a className='cursor-normal' href={SERVER_IMAGE_URL + item.images} target="_blank" rel="noreferrer" key={index} data-filter="android">
+                                    <a className='cursor-pointer' href={(item.urls !== '-') ? item.urls : SERVER_IMAGE_URL + item.images} target="_blank" rel="noreferrer" key={index} data-filter="android">
                                         <div className="col-md-4 col-sm-6" style={{marginBottom: 40}}>
                                             <div className="portfolio-item">
                                                 <div className="item-caption">
                                                     <h4>{item.title}</h4>
-                                                    <p>{item.description}</p>
+                                                    <p>{item.organization}</p>
                                                 </div>
                                                 <div className="item-image">
-                                                    <img alt="#" src={SERVER_IMAGE_URL + item.images} width="370" height="262" />
+                                                    <img alt={item.title} src={SERVER_IMAGE_URL + item.images} width="370" height="262" />
                                                 </div>
                                             </div>
                                         </div>

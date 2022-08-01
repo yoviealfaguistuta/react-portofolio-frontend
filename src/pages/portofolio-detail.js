@@ -43,7 +43,7 @@ export const PortfolioDetail = () => {
                                         DataResponse.images && DataResponse.images.map((item, index) => {
                                             return (
                                                 <div key={index}>
-                                                    <img src={SERVER_IMAGE_URL + item.images} alt={DataResponse.title} />
+                                                    <img  alt={DataResponse.title} src={SERVER_IMAGE_URL + item.images} />
                                                 </div>
                                             )
                                         })
