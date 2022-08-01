@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from 'react';
-import ImageProfile from '../assets/images/YovieAlfaguistuta.jfif';
+import ImageProfile from 'assets/images/YovieAlfaguistuta.png';
 import Testt from '../assets/images/test.png';
 import Instagram from '../assets/images/logo-connect/instagram.png';
 import Github from '../assets/images/logo-connect/github.png';

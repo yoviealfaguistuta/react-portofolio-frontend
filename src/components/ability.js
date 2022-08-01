@@ -1,16 +1,17 @@
 import React, { Fragment } from 'react'
 import LaravelImage from 'assets/images/logo-tech-fix/laravel.svg'
 import ReactImage from 'assets/images/logo-tech-fix/react.svg'
-import NextImage from 'assets/images/logo-tech-fix/next.svg'
+// import NextImage from 'assets/images/logo-tech-fix/next.svg'
 import GolangImage from 'assets/images/logo-tech-fix/golang.svg'
-import JavastriptImage from 'assets/images/logo-tech-fix/javascript.svg'
-import PHPImage from 'assets/images/logo-tech-fix/php.svg'
-import JavaImage from 'assets/images/logo-tech-fix/java.svg'
-import GitImage from 'assets/images/logo-tech-fix/git.svg'
-import GithubImage from 'assets/images/logo-tech-fix/github.svg'
-import PostgreeImage from 'assets/images/logo-tech-fix/postgree.svg'
-import MysqlImage from 'assets/images/logo-tech-fix/mysql.svg'
-import DockerImage from 'assets/images/logo-tech-fix/docker.svg'
+import JqueryImage from 'assets/images/logo-tech-fix/jquery.svg'
+// import JavastriptImage from 'assets/images/logo-tech-fix/javascript.svg'
+// import PHPImage from 'assets/images/logo-tech-fix/php.svg'
+// import JavaImage from 'assets/images/logo-tech-fix/java.svg'
+// import GitImage from 'assets/images/logo-tech-fix/git.svg'
+// import GithubImage from 'assets/images/logo-tech-fix/github.svg'
+// import PostgreeImage from 'assets/images/logo-tech-fix/postgree.svg'
+// import MysqlImage from 'assets/images/logo-tech-fix/mysql.svg'
+// import DockerImage from 'assets/images/logo-tech-fix/docker.svg'
 import Lottie from "lottie-react";
 import webDevelopment from 'assets/animation/91435-website-animation.json'
 import AndroidDevelopment from 'assets/animation/45735-mobile-notifications.json'
@@ -119,15 +120,8 @@ export const Ability = ({ ability }) => {
                 <img src="img/backgrounds/bg-2.jpg" alt="#" />
             </div>
             <div className="container text-center">
-                <h2 className='text-white-real'>Some of Tools or Technology<br /><strong className='text-white'> Which I Usually Use</strong></h2>
+                <h2 className='text-white-real'>This is My Greatest<br /><strong className='text-white'> Tech Stack</strong></h2>
                 <div className="centered-framework">
-                    <div className="card-body text-center re-layout">
-                        <a href="https://laravel.com/" className='linked-skills' target={'blank'} rel='noreferrer'>
-                            <img width={100} height={100} src={LaravelImage} className="hovered-rotate" alt="Laravel - The PHP Framework for Web Artisans" />
-                            <h4 className='title-framework'>Laravel</h4>
-                        </a>
-                       
-                    </div>
                     <div className="card-body text-center re-layout">
                         <a href="https://reactjs.org/" className='linked-skills' target={'blank'} rel='noreferrer'>
                             <img width={100} height={100} className="hovered-rotate" alt="React - A JavaScript library for building user interfaces" src={ReactImage} />
@@ -135,9 +129,9 @@ export const Ability = ({ ability }) => {
                         </a>
                     </div>
                     <div className="card-body text-center re-layout">
-                        <a href="https://nextjs.org/" className='linked-skills' target={'blank'} rel='noreferrer'>
-                            <img width={100} height={100} className="hovered-rotate" alt="Next - The React Framework for Production" src={NextImage} />
-                            <h4 className='title-framework'>Next JS</h4>
+                        <a href="https://laravel.com/" className='linked-skills' target={'blank'} rel='noreferrer'>
+                            <img width={100} height={100} src={LaravelImage} className="hovered-rotate" alt="Laravel - The PHP Framework for Web Artisans" />
+                            <h4 className='title-framework'>Laravel</h4>
                         </a>
                     </div>
                     <div className="card-body text-center re-layout">
@@ -146,8 +140,15 @@ export const Ability = ({ ability }) => {
                             <h4 className='title-framework'>Go</h4>
                         </a>
                     </div>
+                    <div className="card-body text-center re-layout">
+                        <a href="https://jquery.com/" className='linked-skills' target={'blank'} rel='noreferrer'>
+                            <img width={100} height={100} className="hovered-rotate" alt="jQuery - Write less do more" src={JqueryImage} />
+                            <h4 className='title-framework'>jQuery</h4>
+                        </a>
+                    </div>
+                    
                 </div>
-                <div className="centered-framework">
+                {/* <div className="centered-framework">
                     <div className="card-body text-center re-layout">
                         <a href="https://www.javascript.com/" className='linked-skills' target={'blank'} rel='noreferrer'>
                             <img width={100} height={100} className="hovered-rotate" alt="Javascript - Programming language that is one of the core technologies" src={JavastriptImage} />
@@ -198,7 +199,7 @@ export const Ability = ({ ability }) => {
                             <h4 className='title-framework'>Docker</h4>
                         </a>
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
         <section id="who-we-are" className="parallax pt20 pb40" data-overlay-dark={8}>

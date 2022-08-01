@@ -17,7 +17,7 @@ export const Banner = () => {
                 <div className="row">
                     <div className="col-sm-12 text-center">
                         <h1>Hello, I am<br /><strong className="myName text-white glitch">Yovie Alfa Guistuta</strong></h1>
-                        <p className="lead desc-name mb40">A <span className="text-white">Software Engineer</span> with <span className="text-white">1 years experience</span> and successfully build some complex application</p>
+                        <p className="lead desc-name mb40">A <span className="text-white">Software Engineer</span> with <span className="text-white">2 years experience</span> and successfully build some complex application</p>
                         <a href={CV} target="__blank" className="btn btn-lg btn-ghost"  style={{ color: 'white', border: 'none' }}><span>Download CV </span></a>
                         <a href="mailto:yoviealfaguistuta@gmail.com" target="__blank" className="btn btn-lg btn-ghost"  style={{ color: 'white', border: 'none' }}><span>Contact Me </span></a>
                     </div>
