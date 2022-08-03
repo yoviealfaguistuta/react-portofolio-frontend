@@ -12,27 +12,27 @@ exports[`Render Portfolio Detail 1`] = `
         class="row"
       >
         <svg
-          aria-labelledby="vj0ycm-aria"
+          aria-labelledby="439ebv7-aria"
           role="img"
           viewBox="0 0 700 300"
         >
           <title
-            id="vj0ycm-aria"
+            id="439ebv7-aria"
           >
             Loading...
           </title>
           <rect
-            clip-path="url(#vj0ycm-diff)"
+            clip-path="url(#439ebv7-diff)"
             height="100%"
             role="presentation"
-            style="fill: url(#vj0ycm-animated-diff);"
+            style="fill: url(#439ebv7-animated-diff);"
             width="100%"
             x="0"
             y="0"
           />
           <defs>
             <clippath
-              id="vj0ycm-diff"
+              id="439ebv7-diff"
             >
               <rect
                 height="32"
@@ -116,7 +116,7 @@ exports[`Render Portfolio Detail 1`] = `
               />
             </clippath>
             <lineargradient
-              id="vj0ycm-animated-diff"
+              id="439ebv7-animated-diff"
             >
               <stop
                 offset="0%"
