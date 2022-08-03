@@ -1,20 +1,15 @@
 import React, { Fragment } from 'react'
 import LaravelImage from 'assets/images/logo-tech-fix/laravel.svg'
 import ReactImage from 'assets/images/logo-tech-fix/react.svg'
-// import NextImage from 'assets/images/logo-tech-fix/next.svg'
 import GolangImage from 'assets/images/logo-tech-fix/golang.svg'
 import JqueryImage from 'assets/images/logo-tech-fix/jquery.svg'
-// import JavastriptImage from 'assets/images/logo-tech-fix/javascript.svg'
-// import PHPImage from 'assets/images/logo-tech-fix/php.svg'
-// import JavaImage from 'assets/images/logo-tech-fix/java.svg'
-// import GitImage from 'assets/images/logo-tech-fix/git.svg'
-// import GithubImage from 'assets/images/logo-tech-fix/github.svg'
-// import PostgreeImage from 'assets/images/logo-tech-fix/postgree.svg'
-// import MysqlImage from 'assets/images/logo-tech-fix/mysql.svg'
-// import DockerImage from 'assets/images/logo-tech-fix/docker.svg'
+import JavaImage from 'assets/images/logo-tech-fix/java.svg'
 import Lottie from "lottie-react";
-import webDevelopment from 'assets/animation/91435-website-animation.json'
-import AndroidDevelopment from 'assets/animation/45735-mobile-notifications.json'
+import webDevelopment from 'assets/animation/web-development.json'
+import AndroidDevelopment from 'assets/animation/android-development.json'
+import AwesomeAmazing from 'assets/animation/awesome-amazing.json'
+import Complexity from 'assets/animation/complexity.json'
+import CleanDesign from 'assets/animation/clean-design.json'
 
 export const ListAbility = (ability) => {
     return ability.ability.map((item, index) => {
@@ -75,37 +70,66 @@ export const ListOther = (other) => {
 };
 
 
-export const Ability = ({ ability }) => {
+export const Ability = () => {
 
     return <Fragment>
-        <section id="who-we-are" className="parallax pt100 mt-cs pb100" data-overlay-dark={8}>
+        <section className="pt100 bg-dark mt-cs pb100">
             <div className="background-image">
                 <img src="img/backgrounds/bg-2.jpg" alt="#" />
             </div>
             <div className="container">
                 <div className="col-md-12 text-center pb20">
-                    <h2 className='text-white-real'>And This is My <br /><strong className='text-white'>Knowledge, Ability and Skills</strong></h2>
-                    <p className="lead">My main ability is developing <span className="text-white">system</span> based on here .</p>
+                    <h2 className='text-title'>Skills and Tech Stack</h2>
+                    <p className="text-desc">My <span className="text-highlight">main skills and tech stack</span> when developing system based on here .</p>
                 </div>
                 <div className="row vertical-align">
                     <div className="col-md-12 pt40 pb30">
                         <div className="progress-bars standard transparent-bars">
                             <div className="row">
                                 <div className="col-md-6">
-                                    <div className="card bg-card-ability mb-wd">
+                                    <div className="card bg-main mb-wd">
                                         <div className="card-body centered-cs">
                                             <Lottie animationData={webDevelopment} style={{ width: 250, height: 160 }} loop={true} />
-                                            <h1 className='font-29'>Web Development</h1>
-                                            <p className='line-height-desc text-center'>Create, analyze, debug, test, and maintenance web application with the latest technology from planning until it going released</p>
+                                            <h1 className='font-29 text-title'>Web Development</h1>
+                                            <p className='text-desc text-center'>Create, analyze, debug, test, and maintenance web application with the latest technology from planning until it going released</p>
+                                            <div className="centered-framework">
+                                                <div className="container-main-tech-stack text-center">
+                                                    <a href="https://reactjs.org/" className='linked-skills' target={'blank'} rel='noreferrer'>
+                                                        <img width={30} height={30} className="hovered-rotate" alt="React - A JavaScript library for building user interfaces" src={ReactImage} />
+                                                    </a>
+                                                </div>
+                                                <div className="container-main-tech-stack text-center">
+                                                    <a href="https://laravel.com/" className='linked-skills' target={'blank'} rel='noreferrer'>
+                                                        <img width={30} height={30} src={LaravelImage} className="hovered-rotate" alt="Laravel - The PHP Framework for Web Artisans" />
+                                                    </a>
+                                                </div>
+                                                <div className="container-main-tech-stack text-center">
+                                                    <a href="https://go.dev/" className='linked-skills' target={'blank'} rel='noreferrer'>
+                                                        <img width={30} height={30} className="hovered-rotate" alt="Go - Build fast, reliable, and efficient software at scale" src={GolangImage} />
+                                                    </a>
+                                                </div>
+                                                <div className="container-main-tech-stack text-center">
+                                                    <a href="https://jquery.com/" className='linked-skills' target={'blank'} rel='noreferrer'>
+                                                        <img width={30} height={30} className="hovered-rotate" alt="jQuery - Write less do more" src={JqueryImage} />
+                                                    </a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-md-6">
-                                    <div className="card bg-card-ability">
+                                    <div className="card bg-main">
                                         <div className="card-body centered-cs">
                                             <Lottie animationData={AndroidDevelopment} style={{ width: 250, height: 160 }} loop={true} />
-                                            <h1 className='font-29'>Android Development</h1>
-                                            <p className='line-height-desc text-center'>Develop mobile application in Android OS with the latest technology from planning until it going released</p>
+                                            <h1 className='font-29 text-title'>Android Development</h1>
+                                            <p className='text-desc text-center'>Develop mobile application in Android OS with the latest technology from planning until it going released</p>
+                                            <div className="centered-framework">
+                                                <div className="container-main-tech-stack text-center">
+                                                    <a href="https://www.java.com/en/" className='linked-skills' target={'blank'} rel='noreferrer'>
+                                                        <img width={30} height={30} className="hovered-rotate" alt="Java - Programming language and computing platform first released by Sun Microsystems" src={JavaImage} />
+                                                    </a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -115,97 +139,34 @@ export const Ability = ({ ability }) => {
                 </div>
             </div>
         </section>
-        <section id="who-we-are" className="parallax pt20 pb40" data-overlay-dark={8}>
-            <div className="background-image">
-                <img src="img/backgrounds/bg-2.jpg" alt="#" />
-            </div>
-            <div className="container text-center">
-                <h2 className='text-white-real'>This is My Greatest<br /><strong className='text-white'> Tech Stack</strong></h2>
-                <div className="centered-framework">
-                    <div className="card-body text-center re-layout">
-                        <a href="https://reactjs.org/" className='linked-skills' target={'blank'} rel='noreferrer'>
-                            <img width={100} height={100} className="hovered-rotate" alt="React - A JavaScript library for building user interfaces" src={ReactImage} />
-                            <h4 className='title-framework'>React JS</h4>
-                        </a>
-                    </div>
-                    <div className="card-body text-center re-layout">
-                        <a href="https://laravel.com/" className='linked-skills' target={'blank'} rel='noreferrer'>
-                            <img width={100} height={100} src={LaravelImage} className="hovered-rotate" alt="Laravel - The PHP Framework for Web Artisans" />
-                            <h4 className='title-framework'>Laravel</h4>
-                        </a>
-                    </div>
-                    <div className="card-body text-center re-layout">
-                        <a href="https://go.dev/" className='linked-skills' target={'blank'} rel='noreferrer'>
-                            <img width={100} height={100} className="hovered-rotate" alt="Go - Build fast, reliable, and efficient software at scale" src={GolangImage} />
-                            <h4 className='title-framework'>Go</h4>
-                        </a>
-                    </div>
-                    <div className="card-body text-center re-layout">
-                        <a href="https://jquery.com/" className='linked-skills' target={'blank'} rel='noreferrer'>
-                            <img width={100} height={100} className="hovered-rotate" alt="jQuery - Write less do more" src={JqueryImage} />
-                            <h4 className='title-framework'>jQuery</h4>
-                        </a>
-                    </div>
-                    
-                </div>
-                {/* <div className="centered-framework">
-                    <div className="card-body text-center re-layout">
-                        <a href="https://www.javascript.com/" className='linked-skills' target={'blank'} rel='noreferrer'>
-                            <img width={100} height={100} className="hovered-rotate" alt="Javascript - Programming language that is one of the core technologies" src={JavastriptImage} />
-                            <h4 className='title-framework'>Javascript</h4>
-                        </a>
-                    </div>
-                    <div className="card-body text-center re-layout">
-                        <a href="https://www.java.com/en/" className='linked-skills' target={'blank'} rel='noreferrer'>
-                            <img width={100} height={100} className="hovered-rotate" alt="Java - Programming language and computing platform first released by Sun Microsystems" src={JavaImage} />
-                            <h4 className='title-framework'>Java</h4>
-                        </a>
-                    </div>
-                    <div className="card-body text-center re-layout">
-                        <a href="https://www.php.net/" className='linked-skills' target={'blank'} rel='noreferrer'>
-                            <img width={100} height={100} className="hovered-rotate" alt="PHP - Hypertext Preprocessor" src={PHPImage} />
-                            <h4 className='title-framework'>PHP</h4>
-                        </a>
-                    </div>
-                    <div className="card-body text-center re-layout">
-                        <a href="https://git-scm.com/" className='linked-skills' target={'blank'} rel='noreferrer'>
-                            <img width={100} height={100} className="hovered-rotate" alt="GIT - Fast Version Control" src={GitImage} />
-                            <h4 className='title-framework'>Git</h4>
-                        </a>
+        <section className="parallax mt-res-unique bg-dark pb90">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12 text-center pb20">
+                            <h2 className='text-title'>Unique and Strength</h2>
+                            <p className="text-desc">My <span className="text-highlight">unique and strength</span> when developing a system</p>
+                        </div>
+                        <div className="col-md-12">
+                            <div className="testimonials quote-icons centered-cd" data-autoplay="false" data-speed={4000}>
+                                <div className='rest-skc'>
+                                    <Lottie animationData={AwesomeAmazing} style={{ width: 250, height: 160 }} loop={true} />
+                                    <h3 className='text-title'>Awesome and Amazing</h3>
+                                    <span className="text-desc">When I make a program then I will make it <span className="text-highlight">as good as possible</span> because this is my work<br /> and people will use what I have created. A good rating from them is what I look forward to the most.<i className="vossen-quote text-white" /></span>
+                                </div>
+                                <div className='rest-skc'>
+                                <Lottie animationData={Complexity} style={{ width: 250, height: 160 }} loop={true} />
+                                    <h3 className='text-title'>Complexity</h3>
+                                    <span className="text-desc">Making programs that are quite detailed is what I like the most. <br />A program with <span className="text-highlight">very complete features</span> makes the results that are done more satisfying<i className="vossen-quote text-white" /></span>
+                                </div>
+                                <div className='rest-skc'>
+                                <Lottie animationData={CleanDesign} style={{ width: 250, height: 160 }} loop={true} />
+                                    <h3 className='text-title'>Clean Design</h3>
+                                    <span className="text-desc">The user interface is something that needs to be <span className="text-highlight">considered</span> in making a program. <br />I don't like the appearance of a crowded or messy program because it's very uncomfortable to look at.<i className="vossen-quote text-white" /></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div className="centered-framework">
-                    <div className="card-body text-center re-layout">
-                        <a href="https://github.com/" className='linked-skills' target={'blank'} rel='noreferrer'>
-                            <img width={100} height={100} className="hovered-rotate" alt="Github - Best Developer Community" src={GithubImage} />
-                            <h4 className='title-framework'>GitHub</h4>
-                        </a>
-                    </div>
-                    <div className="card-body text-center re-layout">
-                        <a href="https://www.postgresql.org/" className='linked-skills' target={'blank'} rel='noreferrer'>
-                            <img width={100} height={100} className="hovered-rotate" alt="PostgreSql - The world's most advanced open source database" src={PostgreeImage} />
-                            <h4 className='title-framework'>PostgreSql</h4>
-                        </a>
-                    </div>
-                    <div className="card-body text-center re-layout">
-                        <a href="https://www.mysql.com/" className='linked-skills' target={'blank'} rel='noreferrer'>
-                            <img width={100} height={100} className="hovered-rotate" alt="PostgreSql - The world's most popular open source database" src={MysqlImage} />
-                            <h4 className='title-framework'>MySql</h4>
-                        </a>
-                    </div>
-                    <div className="card-body text-center re-layout">
-                        <a href="https://www.docker.com/" className='linked-skills' target={'blank'} rel='noreferrer'>
-                            <img width={100} height={100} className="hovered-rotate" alt="Docker - Empowering App Development for Developers" src={DockerImage} />
-                            <h4 className='title-framework'>Docker</h4>
-                        </a>
-                    </div>
-                </div> */}
-            </div>
-        </section>
-        <section id="who-we-are" className="parallax pt20 pb40" data-overlay-dark={8}>
-            <div className="background-image">
-                <img src="img/backgrounds/bg-2.jpg" alt="#" />
-            </div>
-        </section>
+            </section>
     </Fragment>
 }

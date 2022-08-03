@@ -1,13 +1,10 @@
-import React, { Fragment, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ImageProfile from 'assets/images/YovieAlfaguistuta.png';
-import Testt from '../assets/images/test.png';
-import Instagram from '../assets/images/logo-connect/instagram.png';
-import Github from '../assets/images/logo-connect/github.png';
-import Email from '../assets/images/logo-connect/email.png';
-import Location from '../assets/images/logo-connect/location.png';
-import Phone from '../assets/images/logo-connect/phone.png';
+import CV from '../assets/Curriculum Vitae.pdf'
 import axios from 'axios';
 import { SERVER_URL } from 'constant/url';
+import { FiGithub, FiInstagram, FiLinkedin, FiMail, FiPhoneCall } from 'react-icons/fi';
+import * as Sentry from "@sentry/react";
 
 export const ListAbout = ({ attr }) => {
     return attr.map((item, index) =>
@@ -40,67 +37,49 @@ export const About = () => {
             if (response.data.status === true) {
                 setDataResponse(response.data.body.about);
             }
-        }).catch(function (error) {
-            
-        }).then(function () {
-            
-        }); 
+        }).catch(function () {
+            setDataResponse('error');
+            Sentry.captureException(new Error("500 - Internal Server Error - Cant get about data"));
+        }) 
         return () => {
             setDataResponse(null);
         };
     }, []);
 
-    return <Fragment>
-        <section id="about" className="bg-dark pt100 pb100 main-about-container-res">
+    return (
+        <section id="hero" className="hero-fullscreen bg-main parallax">
+            <div className="background-image">
+                <img src="https://media.istockphoto.com/photos/forest-wooden-table-background-summer-sunny-meadow-with-green-grass-picture-id1353553203?b=1&k=20&m=1353553203&s=170667a&w=0&h=QTyTGI9tWQluIlkmwW0s7Q4z7R_IT8egpzzHjW3cSas=" alt="" />
+            </div>
             <div className="container">
-                <div className="row container-order-about-mobile">
-                    <div className="col-md-7 text-left centered-about">
-                        <h2 className='title-about'>About Me</h2><br />
-                        {DataResponse != null ? <p className="lead my-msg-about desc-about text-real-white">{DataResponse}</p> : ''}
-                        <ul className="connected-icons social-icons icon-container-about">
-                            <li className="connected-icon li-connect-left">
-                                <a target="_blank" href="https://www.linkedin.com/in/yovie-alfa-guistuta-b02496146/" rel="noreferrer" alt="Yovie Alfa Guistuta">
-                                    <img width={25} height={25} alt="Logo Linkedin" src={Testt} />
-                                    <h5 className='text-white-real desc-connect'>Linkedin</h5>
-                                </a>
-                            </li>
-                            <li className="connected-icon li-connect-left">
-                                <a target="_blank" href="https://www.instagram.com/yoviealfa/" rel="noreferrer" alt="Yovie Alfa Guistuta">
-                                    <img width={25} height={25} alt="Logo Instagram" src={Instagram} />
-                                    <h5 className='text-white-real desc-connect'>Instagram</h5>
-                                </a>
-                            </li>
-                            <li className="connected-icon li-connect-left">
-                                <a target="_blank" href="https://github.com/yoviealfaguistuta" rel="noreferrer" alt="Yovie Alfa Guistuta">
-                                    <img width={25} height={25} alt="Logo GitHub" src={Github} />
-                                    <h5 className='text-white-real desc-connect'>GitHub</h5>
-                                </a>
-                            </li>
-                            <li className="connected-icon li-connect-left">
-                                <a target="_blank" href="mailto:yoviealfaguistuta@gmail.com" rel="noreferrer" alt="Yovie Alfa Guistuta">
-                                    <img width={25} height={25} alt="Logo Email" src={Email} />
-                                    <h5 className='text-white-real desc-connect'>Email</h5>
-                                </a>
-                            </li>
-                            <li className="connected-icon li-connect-left">
-                                <a target="_blank" href="https://t.me/yoviealfaguistuta" rel="noreferrer" alt="Yovie Alfa Guistuta">
-                                    <img width={25} height={25} alt="Logo Phone Number" src={Phone} />
-                                    <h5 className='text-white-real desc-connect'>Telegram</h5>
-                                </a>
-                            </li>
-                        </ul>
+                <div className="row">
+                    <div className="col-sm-8">
+                        <h3 className='text-highlight hello-for-responsive'>Hello, I am</h3>
+                        <h1 className='font-bold text-title pb-0 main-title-res'>Yovie Alfa Guistuta</h1>
+                        {DataResponse != null ? DataResponse !== 'error' ? <h3 className="lead my-msg-about desc-about text-desc-main-align text-desc">{DataResponse}</h3> 
+                        : 
+                        <>
+                            <h4 className="text-error">Oops !.. Sepertinya Ada Yang Salah</h4> 
+                            <p className='text-error-desc'>Server tidak merespon, Mohon tunggu beberapa saat karena akan diperbaiki secepatnya ...</p>
+                        </>
+                        : ''}
+                        <div className="button-main-about">
+                            <a href={CV} target="__blank" className="btn-main btn-about-space">Download Resume</a>
+                            <a href="mailto:yoviealfaguistuta@gmail.com" target="__blank" className="btn-main ml-3">Contact Me</a>
+                        </div>
                     </div>
-                    <div className="col-md-5 centered-image-about">
+                    <div className="col-md-4 text-center">
                         <img className='image-about' src={ImageProfile} alt="Yovie Alfa Guistuta" />
                     </div>
                 </div>
             </div>
-            <div className="container">
-                <div className="row">
-                    
-                </div>
+            <div className="social-bottom-icon">
+                <a href={'https://www.linkedin.com/in/yovie-alfa-guistuta-b02496146'} target={'_blank'} rel="noreferrer" className="text-title"><FiLinkedin /></a>
+                <a href={'https://www.instagram.com/yoviealfa/'} target={'_blank'} rel="noreferrer" className="text-title"><FiInstagram /></a>
+                <a href={'https://github.com/yoviealfaguistuta'} target={'_blank'} rel="noreferrer" className="text-title"><FiGithub /></a>
+                <a href={'mailto:yoviealfaguistuta@gmail.com'} target={'_blank'} rel="noreferrer" className="text-title"><FiMail /></a>
+                <a href={'https://t.me/yoviealfaguistuta'} target={'_blank'} rel="noreferrer" className="text-title"><FiPhoneCall /></a>
             </div>
         </section>
-        
-    </Fragment>
+    )
 };
