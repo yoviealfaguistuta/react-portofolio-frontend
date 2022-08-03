@@ -51,12 +51,44 @@ export const About = () => {
     }, []);
 
     return <Fragment>
-        <section id="about" className="bg-dark pt100 pb100">
+        <section id="about" className="bg-dark pt100 pb100 main-about-container-res">
             <div className="container">
-                <div className="row">
+                <div className="row container-order-about-mobile">
                     <div className="col-md-7 text-left centered-about">
-                        <h2><strong className='text-white'>About Me</strong></h2><br />
-                        {DataResponse != null ? <p className="lead my-msg-about text-real-white">{DataResponse}</p> : ''}
+                        <h2 className='title-about'>About Me</h2><br />
+                        {DataResponse != null ? <p className="lead my-msg-about desc-about text-real-white">{DataResponse}</p> : ''}
+                        <ul className="connected-icons social-icons icon-container-about">
+                            <li className="connected-icon li-connect-left">
+                                <a target="_blank" href="https://www.linkedin.com/in/yovie-alfa-guistuta-b02496146/" rel="noreferrer" alt="Yovie Alfa Guistuta">
+                                    <img width={25} height={25} alt="Logo Linkedin" src={Testt} />
+                                    <h5 className='text-white-real desc-connect'>Linkedin</h5>
+                                </a>
+                            </li>
+                            <li className="connected-icon li-connect-left">
+                                <a target="_blank" href="https://www.instagram.com/yoviealfa/" rel="noreferrer" alt="Yovie Alfa Guistuta">
+                                    <img width={25} height={25} alt="Logo Instagram" src={Instagram} />
+                                    <h5 className='text-white-real desc-connect'>Instagram</h5>
+                                </a>
+                            </li>
+                            <li className="connected-icon li-connect-left">
+                                <a target="_blank" href="https://github.com/yoviealfaguistuta" rel="noreferrer" alt="Yovie Alfa Guistuta">
+                                    <img width={25} height={25} alt="Logo GitHub" src={Github} />
+                                    <h5 className='text-white-real desc-connect'>GitHub</h5>
+                                </a>
+                            </li>
+                            <li className="connected-icon li-connect-left">
+                                <a target="_blank" href="mailto:yoviealfaguistuta@gmail.com" rel="noreferrer" alt="Yovie Alfa Guistuta">
+                                    <img width={25} height={25} alt="Logo Email" src={Email} />
+                                    <h5 className='text-white-real desc-connect'>Email</h5>
+                                </a>
+                            </li>
+                            <li className="connected-icon li-connect-left">
+                                <a target="_blank" href="https://t.me/yoviealfaguistuta" rel="noreferrer" alt="Yovie Alfa Guistuta">
+                                    <img width={25} height={25} alt="Logo Phone Number" src={Phone} />
+                                    <h5 className='text-white-real desc-connect'>Telegram</h5>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                     <div className="col-md-5 centered-image-about">
                         <img className='image-about' src={ImageProfile} alt="Yovie Alfa Guistuta" />
@@ -65,46 +97,7 @@ export const About = () => {
             </div>
             <div className="container">
                 <div className="row">
-                    <div className="col-md-12">
-                        <ul className="connected-icons social-icons">
-                            <li className="connected-icon">
-                                <a target="_blank" href="https://www.linkedin.com/in/yovie-alfa-guistuta-b02496146/" rel="noreferrer" alt="Yovie Alfa Guistuta">
-                                    <img width={50} height={50} alt="Logo Linkedin" src={Testt} />
-                                    <h5 className='text-white-real desc-connect'>Linkedin</h5>
-                                </a>
-                            </li>
-                            <li className="connected-icon">
-                                <a target="_blank" href="https://www.instagram.com/yoviealfa/" rel="noreferrer" alt="Yovie Alfa Guistuta">
-                                    <img width={50} height={50} alt="Logo Instagram" src={Instagram} />
-                                    <h5 className='text-white-real desc-connect'>Instagram</h5>
-                                </a>
-                            </li>
-                            <li className="connected-icon">
-                                <a target="_blank" href="https://github.com/yoviealfaguistuta" rel="noreferrer" alt="Yovie Alfa Guistuta">
-                                    <img width={50} height={50} alt="Logo GitHub" src={Github} />
-                                    <h5 className='text-white-real desc-connect'>GitHub</h5>
-                                </a>
-                            </li>
-                            <li className="connected-icon">
-                                <a target="_blank" href="mailto:yoviealfaguistuta@gmail.com" rel="noreferrer" alt="Yovie Alfa Guistuta">
-                                    <img width={50} height={50} alt="Logo Email" src={Email} />
-                                    <h5 className='text-white-real desc-connect'>Email</h5>
-                                </a>
-                            </li>
-                            <li className="connected-icon">
-                                <a target="_blank" href="https://www.google.com/maps/place/Jl.+Pulau+Sanama,+Way+Halim+Permai,+Way+Halim,+Kota+Bandar+Lampung,+Lampung+35132/@-5.3854168,105.2722535,15.79z/data=!4m5!3m4!1s0x2e40db2242631409:0x44c47ee3b4619d4e!8m2!3d-5.3851969!4d105.2741399" rel="noreferrer" alt="Yovie Alfa Guistuta">
-                                    <img width={50} height={50} alt="Logo Location" src={Location} />
-                                    <h5 className='text-white-real desc-connect'>Location</h5>
-                                </a>
-                            </li>
-                            <li className="connected-icon">
-                                <a target="_blank" href="https://t.me/yoviealfaguistuta" rel="noreferrer" alt="Yovie Alfa Guistuta">
-                                    <img width={50} height={50} alt="Logo Phone Number" src={Phone} />
-                                    <h5 className='text-white-real desc-connect'>Phone Number</h5>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                    
                 </div>
             </div>
         </section>

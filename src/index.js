@@ -4,6 +4,7 @@ import './assets/css/ion-icons.min.css';
 import './assets/css/etline-icons.min.css';
 import './assets/css/theme.css';
 import './assets/css/costum.css';
+import './assets/css/responsive.css';
 import './assets/css/purple.css';
 import reportWebVitals from './reportWebVitals';
 import { createRoot } from 'react-dom/client';

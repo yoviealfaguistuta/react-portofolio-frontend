@@ -581,11 +581,6 @@ code {
     width: 100%;
 }
 
-.connected-icon {
-    width: 180px;
-    height: 118px;
-}
-
 .border {
     border-bottom: 7px solid #828282;
     margin-top: 50px;
@@ -866,4 +861,36 @@ code {
 .digitalocean {
     margin-bottom: 5px;
     width: 100px;
+}
+
+.title-about {
+    font-weight: bold;
+    color: white;
+}
+
+.flex-order-mobile {
+    display: flex;
+}
+
+
+.icon-container-about {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+.desc-connect {
+    font-size: 12px;
+}
+
+.connected-icons {
+    width: auto;
+    margin-top: 0px;
+}
+
+.li-connect-left {
+    width: 120px;
+    padding-left: 0px !important;
+    padding-right: 60px !important;
 }
