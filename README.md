@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+<div id="top"></div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/yoviealfaguistuta/react-portofolio-frontend">
+    <img src="public/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-## Available Scripts
+  <h3 align="center">My Portfolio (Frontend)</h3>
 
-In the project directory, you can run:
+  <p align="center">
+    <a href="http://yoviealfaguistuta.site">View Demo</a>
+    ·
+    <a href="https://github.com/yoviealfaguistuta/react-portofolio-frontend/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/yoviealfaguistuta/react-portofolio-frontend/issues">Request Feature</a>
+  </p>
+</div>
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Built With
 
-### `yarn test`
+This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* ![React](https://img.shields.io/badge/-React-0D1117?style=flat&logo=react)&nbsp;
+* ![Bootstrap](https://img.shields.io/badge/-Bootstrap-0D1117?style=flat&logo=bootstrap)&nbsp;
+* ![React_Router](https://img.shields.io/badge/React_Router-0D1117?style=flat&logo=react-router)&nbsp;
+* ![Jest](https://img.shields.io/badge/Jest-0D1117?style=flat&logo=Jest)&nbsp;
 
-### `yarn build`
+<!-- GETTING STARTED -->
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To get a local copy up and running follow these simple example steps
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run this, you need to install all of them in your machine:
+- Node JS
+- NPM or Yarn
+- Git
 
-### `yarn eject`
+### Installation 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+If you already have all the prerequisites you can follow this step:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository
+ ```sh
+ git clone https://github.com/yoviealfaguistuta/react-portofolio-frontend.git
+ ```
+2. Install packages
+  ```sh
+  npm install or yarn install
+  ```
+3. Navigate to the root project
+  ```sh
+  cd react-portofolio-frontend
+  ```
+<!-- USAGE EXAMPLES -->
+## Running
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+You can run this app by doing following step:
+Using NPM
+  ```sh
+  npm start 
+  ```
+Using Yarn
+  ```sh
+  yarn start 
+  ```
+ 
+<!-- CONTRIBUTING -->
+## Contributing
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-## Learn More
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- LICENSE -->
+## License
 
-### Code Splitting
+Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<!-- CONTACT -->
+## Contact
 
-### Analyzing the Bundle Size
+Yovie Alfa Guistuta - [@yoviealfa](https://www.instagram.com/yoviealfa/) - yoviealfaguistuta@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Project Link: [https://github.com/yoviealfaguistuta/react-portofolio-frontend](https://github.com/yoviealfaguistuta/react-portofolio-frontend)
