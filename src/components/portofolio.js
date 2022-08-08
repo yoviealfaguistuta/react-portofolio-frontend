@@ -15,7 +15,15 @@ export const Portfolio = () => {
         axios.get(SERVER_URL + '/portofolio/list').then(function (response) {
             if (response.data.status === true) {
                 setOpacityOpen('vossen-portfolio')
-                setDataResponse(response.data.body);
+
+                const data = response.data.body.sort(function(x, y){
+                    // return x.created_at - y.created_at;
+                    return new Date(x.created_at) - new Date(y.created_at);
+                })
+
+                console.log('data :>> ', data.reverse());
+
+                setDataResponse(data);
             }
         }).catch(function () {
             setDataResponse('error');
@@ -46,7 +54,7 @@ export const Portfolio = () => {
                                                         <p>{item.descriptions}</p>
                                                     </div>
                                                     <div className="item-image">
-                                                        <img className='image-main-portfolio' NativeImgProps={{alt: item.title}} src={SERVER_IMAGE_URL + item.images} width="100%" height="262"/>
+                                                        <img alt={item.title} className='image-main-portfolio' NativeImgProps={{alt: item.title}} src={SERVER_IMAGE_URL + item.images} width="100%" height="262"/>
                                                     </div>
                                                 </div>
                                             </Link>
