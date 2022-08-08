@@ -38,19 +38,19 @@ export const Portfolio = () => {
                         <div className={OpacityOpen}>
                             {DataResponse != null ? (DataResponse !== 'error') ? DataResponse.map((item, index) => {
                                 return (
-                                    <Link to={"/detail/" + item.id} key={index} data-filter="android">
                                         <div className="col-md-4 col-sm-6" style={{marginBottom: 40}}>
-                                            <div className="portfolio-item">
-                                                <div className="item-caption">
-                                                    <h4>{item.title}</h4>
-                                                    <p>{item.descriptions}</p>
+                                            <Link to={"/detail/" + item.id} key={index} data-filter="android">
+                                                <div className="portfolio-item" style={{ width: 370, height: 262 }}>
+                                                    <div className="item-caption">
+                                                        <h4>{item.title}</h4>
+                                                        <p>{item.descriptions}</p>
+                                                    </div>
+                                                    <div className="item-image">
+                                                        <Image NativeImgProps={{alt: item.title}} src={SERVER_IMAGE_URL + item.images} width="370" height="262" fallback={<Shimmer width={800} height={600} />} />
+                                                    </div>
                                                 </div>
-                                                <div className="item-image">
-                                                    <Image NativeImgProps={{alt: item.title}} src={SERVER_IMAGE_URL + item.images} width="370" height="262" fallback={<Shimmer width={800} height={600} />} />
-                                                </div>
-                                            </div>
+                                            </Link>
                                         </div>
-                                    </Link>
                                 )
                             }) : <Error/> : 
                             <LoadingPortfolio />
