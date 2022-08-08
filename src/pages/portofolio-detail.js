@@ -63,6 +63,18 @@ export const PortfolioDetail = () => {
                                         <span className="text-desc-info">{DataResponse.platform}</span>
                                     </div>
                                     <div>
+                                        <span className='text-highlight-detail'>Tech Stack</span>
+                                    </div>
+                                    <div className="mbb-2">
+                                        <span className="text-desc-info">{DataResponse.tech}</span>
+                                    </div>
+                                    <div>
+                                        <span className='text-highlight-detail'>Job Role</span>
+                                    </div>
+                                    <div className="mbb-2">
+                                        <span className="text-desc-info">{DataResponse.job_role}</span>
+                                    </div>
+                                    <div>
                                         <span className='text-highlight-detail'>Programming Language</span>
                                     </div>
                                     <div className="mbb-2">
