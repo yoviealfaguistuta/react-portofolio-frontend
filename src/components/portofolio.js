@@ -17,12 +17,8 @@ export const Portfolio = () => {
                 setOpacityOpen('vossen-portfolio')
 
                 const data = response.data.body.sort(function(x, y){
-                    // return x.created_at - y.created_at;
                     return new Date(x.created_at) - new Date(y.created_at);
                 })
-
-                console.log('data :>> ', data.reverse());
-
                 setDataResponse(data);
             }
         }).catch(function () {
@@ -46,15 +42,15 @@ export const Portfolio = () => {
                         <div className={OpacityOpen}>
                             {DataResponse != null ? (DataResponse !== 'error') ? DataResponse.map((item, index) => {
                                 return (
-                                        <div className="col-md-4 col-sm-6" style={{marginBottom: 40}}>
-                                            <Link to={"/detail/" + item.id} key={index} data-filter="android">
+                                        <div key={index} className="col-md-4 col-sm-6" style={{marginBottom: 40}}>
+                                            <Link to={"/detail/" + item.id} data-filter="android">
                                                 <div className="portfolio-item" style={{ width: '100%', height: '100%' }}>
                                                     <div className="item-caption">
                                                         <h4>{item.title}</h4>
                                                         <p>{item.descriptions}</p>
                                                     </div>
                                                     <div className="item-image">
-                                                        <img alt={item.title} className='image-main-portfolio' NativeImgProps={{alt: item.title}} src={SERVER_IMAGE_URL + item.images} width="100%" height="262"/>
+                                                        <img alt={item.title} className='image-main-portfolio' src={SERVER_IMAGE_URL + item.images} width="100%" height="262"/>
                                                     </div>
                                                 </div>
                                             </Link>
