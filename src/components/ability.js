@@ -3,7 +3,6 @@ import LaravelImage from 'assets/images/logo-tech-fix/laravel.svg'
 import ReactImage from 'assets/images/logo-tech-fix/react.svg'
 import GolangImage from 'assets/images/logo-tech-fix/golang.svg'
 import JqueryImage from 'assets/images/logo-tech-fix/jquery.svg'
-// import JavaImage from 'assets/images/logo-tech-fix/java.svg'
 import Lottie from "lottie-react";
 import FrontendDeveloper from 'assets/animation/frontend-developer.json'
 import BackendDeveloper from 'assets/animation/backend-developer.json'
@@ -11,67 +10,7 @@ import AwesomeAmazing from 'assets/animation/awesome-amazing.json'
 import Complexity from 'assets/animation/complexity.json'
 import CleanDesign from 'assets/animation/clean-design.json'
 
-export const ListAbility = (ability) => {
-    return ability.ability.map((item, index) => {
-        if (item.category === 'Knowledge') {
-            return (
-                <Fragment key={index}>
-                    <h5 className="bold text-left">{item.name}</h5>
-                    <div className="progress" data-percent={item.percentage + "%"}>
-                        <div className="progress-bar" style={{width: item.percentage + "%"}}>
-                            <span className="progress-bar-tooltip">{item.percentage + "%"}</span>
-                        </div>
-                    </div>
-                </Fragment>
-            )
-        } else {
-            return ('')
-        }
-    });
-};
-
-export const ListFramework = (framework) => {
-    return framework.framework.map((item, index) => {
-        if (item.category === 'Framework') {
-            return (
-                <Fragment key={index}>
-                    <div className="col-md-6 pt40 pb30 res-ability">
-                        <div className="progress-bars standard transparent-bars" data-animate-on-scroll="on">
-                            <h5 className="bold text-left">{item.name}</h5>
-                            <div className="progress" data-percent={item.percentage + "%"}>
-                                <div className="progress-bar" style={{width: item.percentage + "%"}}>
-                                    <span className="progress-bar-tooltip">{item.percentage + "%"}</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </Fragment>
-            )
-        } else {
-            return ('')
-        }
-    });
-};
-
-export const ListOther = (other) => {
-    return other.other.map((item, index) => {
-        if (item.category === 'Other') {
-            return (
-                <Fragment key={index}>
-                    <div className="col-md-3 ">
-                        <h6 className='sub-title-main'>{item.name}</h6>
-                    </div>
-                </Fragment>
-            )
-        } else {
-            return ('')
-        }
-    });
-};
-
-
 export const Ability = () => {
-
     return <Fragment>
         <section className="pt100 bg-dark mt-cs pb100">
             <div className="background-image">
