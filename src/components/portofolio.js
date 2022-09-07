@@ -1,6 +1,5 @@
 import React, { Fragment, useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
-import { Image, Shimmer } from 'react-shimmer'
 import ContentLoader from "react-content-loader"
 import axios from 'axios';
 import { SERVER_IMAGE_URL, SERVER_URL } from 'constant/url';
@@ -17,7 +16,7 @@ export const Portfolio = () => {
                 setOpacityOpen('vossen-portfolio')
 
                 const data = response.data.body.sort(function(x, y){
-                    return new Date(x.created_at) - new Date(y.created_at);
+                    return y.id - x.id;
                 })
                 setDataResponse(data);
             }

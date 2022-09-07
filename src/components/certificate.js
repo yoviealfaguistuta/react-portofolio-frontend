@@ -11,7 +11,12 @@ export const Sertification = () => {
     useEffect(() => {
         axios.get(SERVER_URL + '/certificate').then(function (response) {
             if (response.data.status === true) {
-                setDataResponse(response.data.body);
+
+                const data = response.data.body.sort(function(x, y){
+                    return y.id - x.id;
+                })
+                
+                setDataResponse(data);
             }
         }).catch(function () {
             setDataResponse('error');

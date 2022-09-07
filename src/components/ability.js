@@ -90,22 +90,18 @@ export const Ability = () => {
                                     <div className="card bg-main mb-wd">
                                         <div className="card-body centered-cs">
                                             <Lottie animationData={webDevelopment} style={{ width: 250, height: 160 }} loop={true} />
-                                            <h1 className='font-29 text-title'>Web Development</h1>
-                                            <p className='text-desc text-center'>Create, analyze, debug, test, and maintenance web application with the latest technology from planning until it going released</p>
+                                            <h1 className='font-29 text-title'>Frontend Developer</h1>
+                                            <p className='text-desc text-center'>Develop apps from mockups into code or use my creativity to create awesome UI and still make the UX super easy to use.</p>
                                             <div className="centered-framework">
                                                 <div className="container-main-tech-stack text-center">
                                                     <a href="https://reactjs.org/" className='linked-skills' target={'blank'} rel='noreferrer'>
                                                         <img width={30} height={30} className="hovered-rotate" alt="React - A JavaScript library for building user interfaces" src={ReactImage} />
                                                     </a>
                                                 </div>
+                                                
                                                 <div className="container-main-tech-stack text-center">
                                                     <a href="https://laravel.com/" className='linked-skills' target={'blank'} rel='noreferrer'>
                                                         <img width={30} height={30} src={LaravelImage} className="hovered-rotate" alt="Laravel - The PHP Framework for Web Artisans" />
-                                                    </a>
-                                                </div>
-                                                <div className="container-main-tech-stack text-center">
-                                                    <a href="https://go.dev/" className='linked-skills' target={'blank'} rel='noreferrer'>
-                                                        <img width={30} height={30} className="hovered-rotate" alt="Go - Build fast, reliable, and efficient software at scale" src={GolangImage} />
                                                     </a>
                                                 </div>
                                                 <div className="container-main-tech-stack text-center">
@@ -121,12 +117,17 @@ export const Ability = () => {
                                     <div className="card bg-main">
                                         <div className="card-body centered-cs">
                                             <Lottie animationData={AndroidDevelopment} style={{ width: 250, height: 160 }} loop={true} />
-                                            <h1 className='font-29 text-title'>Android Development</h1>
-                                            <p className='text-desc text-center'>Develop mobile application in Android OS with the latest technology from planning until it going released</p>
+                                            <h1 className='font-29 text-title'>Backend Developer</h1>
+                                            <p className='text-desc text-center'>Develop API with highly efficiently and make Frontend easy to consume with nice response, complete API documentation and always care about security.</p>
                                             <div className="centered-framework">
                                                 <div className="container-main-tech-stack text-center">
-                                                    <a href="https://www.java.com/en/" className='linked-skills' target={'blank'} rel='noreferrer'>
-                                                        <img width={30} height={30} className="hovered-rotate" alt="Java - Programming language and computing platform first released by Sun Microsystems" src={JavaImage} />
+                                                    <a href="https://laravel.com/" className='linked-skills' target={'blank'} rel='noreferrer'>
+                                                        <img width={30} height={30} src={LaravelImage} className="hovered-rotate" alt="Laravel - The PHP Framework for Web Artisans" />
+                                                    </a>
+                                                </div>
+                                                <div className="container-main-tech-stack text-center">
+                                                    <a href="https://go.dev/" className='linked-skills' target={'blank'} rel='noreferrer'>
+                                                        <img width={30} height={30} className="hovered-rotate" alt="Go - Build fast, reliable, and efficient software at scale" src={GolangImage} />
                                                     </a>
                                                 </div>
                                             </div>
