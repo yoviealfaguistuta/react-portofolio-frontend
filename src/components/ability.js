@@ -3,10 +3,10 @@ import LaravelImage from 'assets/images/logo-tech-fix/laravel.svg'
 import ReactImage from 'assets/images/logo-tech-fix/react.svg'
 import GolangImage from 'assets/images/logo-tech-fix/golang.svg'
 import JqueryImage from 'assets/images/logo-tech-fix/jquery.svg'
-import JavaImage from 'assets/images/logo-tech-fix/java.svg'
+// import JavaImage from 'assets/images/logo-tech-fix/java.svg'
 import Lottie from "lottie-react";
-import webDevelopment from 'assets/animation/web-development.json'
-import AndroidDevelopment from 'assets/animation/android-development.json'
+import FrontendDeveloper from 'assets/animation/frontend-developer.json'
+import BackendDeveloper from 'assets/animation/backend-developer.json'
 import AwesomeAmazing from 'assets/animation/awesome-amazing.json'
 import Complexity from 'assets/animation/complexity.json'
 import CleanDesign from 'assets/animation/clean-design.json'
@@ -89,7 +89,7 @@ export const Ability = () => {
                                 <div className="col-md-6">
                                     <div className="card bg-main mb-wd">
                                         <div className="card-body centered-cs">
-                                            <Lottie animationData={webDevelopment} style={{ width: 250, height: 160 }} loop={true} />
+                                            <Lottie animationData={FrontendDeveloper} style={{ width: 250, height: 160 }} loop={true} />
                                             <h1 className='font-29 text-title'>Frontend Developer</h1>
                                             <p className='text-desc text-center'>Develop apps from mockups into code or use my creativity to create awesome UI and still make the UX super easy to use.</p>
                                             <div className="centered-framework">
@@ -116,7 +116,7 @@ export const Ability = () => {
                                 <div className="col-md-6">
                                     <div className="card bg-main">
                                         <div className="card-body centered-cs">
-                                            <Lottie animationData={AndroidDevelopment} style={{ width: 250, height: 160 }} loop={true} />
+                                            <Lottie animationData={BackendDeveloper} style={{ width: 200, height: 160 }} loop={true} />
                                             <h1 className='font-29 text-title'>Backend Developer</h1>
                                             <p className='text-desc text-center'>Develop API with highly efficiently and make Frontend easy to consume with nice response, complete API documentation and always care about security.</p>
                                             <div className="centered-framework">
