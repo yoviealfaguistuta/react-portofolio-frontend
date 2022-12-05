@@ -14,7 +14,7 @@ const container = document.getElementById('root');
 const root = createRoot(container);
 
 Sentry.init({
-    dsn: "https://9701bffc94fd43a0aa001263d16a36a9@o1342163.ingest.sentry.io/6615968",
+    dsn: process.env.REACT_APP_SENTRY,
     integrations: [new BrowserTracing()],
     tracesSampleRate: 1.0,
 });
