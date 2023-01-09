@@ -1,0 +1,579 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render check after async 1`] = `
+<div>
+  <nav
+    class="navbar nav-down"
+    data-animation="shrink"
+    data-fullwidth="true"
+    data-menu-style="transparent"
+  >
+    <div
+      class="container bg-dark"
+    >
+      <div
+        class="navbar-header bg-dark"
+      >
+        <div
+          class="container"
+        >
+          <button
+            aria-controls="navbar"
+            aria-expanded="false"
+            class="navbar-toggle collapsed"
+            data-target="#navbar"
+            data-toggle="collapse"
+            type="button"
+          >
+            <span
+              class="sr-only"
+            >
+              Toggle navigation
+            </span>
+            <span
+              class="icon-bar top-bar"
+            />
+            <span
+              class="icon-bar middle-bar"
+            />
+            <span
+              class="icon-bar bottom-bar"
+            />
+          </button>
+          <a
+            class="navbar-brand to-top"
+            href="/#"
+          >
+            <img
+              alt="#"
+              class="logo-nav logo-size-navbar"
+              src="app-logo.svg"
+            />
+          </a>
+        </div>
+      </div>
+      <div
+        class="navbar-collapse collapse "
+      >
+        <div
+          class="container"
+        >
+          <ul
+            class="nav navbar-nav menu-right"
+          >
+            <li>
+              <a
+                href="curriculum-vitae.pdf"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Resume
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/yovie-alfa-guistuta-b02496146"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Linkedin
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/yoviealfa"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/yoviealfaguistuta"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Github
+              </a>
+            </li>
+            <li
+              class="btn-main-header"
+            >
+              <a
+                class="nopadding"
+                href="mailto:yoviealfaguistuta@gmail.com"
+              >
+                Contact Me
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section
+    class="bg-dark pb50 text-left"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="row"
+      >
+        <svg
+          aria-labelledby="6mt0evd-aria"
+          role="img"
+          viewBox="0 0 700 300"
+        >
+          <title
+            id="6mt0evd-aria"
+          >
+            Loading...
+          </title>
+          <rect
+            clip-path="url(#6mt0evd-diff)"
+            height="100%"
+            role="presentation"
+            style="fill: url(#6mt0evd-animated-diff);"
+            width="100%"
+            x="0"
+            y="0"
+          />
+          <defs>
+            <clippath
+              id="6mt0evd-diff"
+            >
+              <rect
+                height="32"
+                rx="14"
+                ry="14"
+                width="72"
+                x="376"
+                y="253"
+              />
+              <rect
+                height="416"
+                rx="16"
+                ry="16"
+                width="274"
+                x="55"
+                y="42"
+              />
+              <rect
+                height="10"
+                rx="3"
+                ry="3"
+                width="231"
+                x="376"
+                y="101"
+              />
+              <rect
+                height="10"
+                rx="3"
+                ry="3"
+                width="150"
+                x="376"
+                y="121"
+              />
+              <rect
+                height="10"
+                rx="3"
+                ry="3"
+                width="231"
+                x="376"
+                y="81"
+              />
+              <rect
+                height="29"
+                rx="3"
+                ry="3"
+                width="231"
+                x="376"
+                y="41"
+              />
+              <rect
+                height="29"
+                rx="3"
+                ry="3"
+                width="231"
+                x="376"
+                y="140"
+              />
+              <rect
+                height="10"
+                rx="3"
+                ry="3"
+                width="150"
+                x="376"
+                y="180"
+              />
+              <rect
+                height="10"
+                rx="3"
+                ry="3"
+                width="100"
+                x="376"
+                y="200"
+              />
+              <rect
+                height="10"
+                rx="3"
+                ry="3"
+                width="150"
+                x="376"
+                y="220"
+              />
+            </clippath>
+            <lineargradient
+              id="6mt0evd-animated-diff"
+            >
+              <stop
+                offset="0%"
+                stop-color="#111111"
+                stop-opacity="1"
+              >
+                <animate
+                  attributeName="offset"
+                  dur="1.2s"
+                  keyTimes="0; 0.25; 1"
+                  repeatCount="indefinite"
+                  values="-2; -2; 1"
+                />
+              </stop>
+              <stop
+                offset="50%"
+                stop-color="#000000"
+                stop-opacity="1"
+              >
+                <animate
+                  attributeName="offset"
+                  dur="1.2s"
+                  keyTimes="0; 0.25; 1"
+                  repeatCount="indefinite"
+                  values="-1; -1; 2"
+                />
+              </stop>
+              <stop
+                offset="100%"
+                stop-color="#111111"
+                stop-opacity="1"
+              >
+                <animate
+                  attributeName="offset"
+                  dur="1.2s"
+                  keyTimes="0; 0.25; 1"
+                  repeatCount="indefinite"
+                  values="0; 0; 3"
+                />
+              </stop>
+            </lineargradient>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  </section>
+  <footer
+    class="site-footer bg-dark"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col-sm-12 col-md-6 footer-space-about"
+        >
+          <h6>
+            About
+          </h6>
+          Loading ...
+        </div>
+        <div
+          class="col-lg-3 col-sm-3 col-md-3"
+        >
+          <h6>
+            Sosial Media
+          </h6>
+          <ul
+            class="footer-links "
+          >
+            <li>
+              <a
+                href="https://www.linkedin.com/in/yovie-alfa-guistuta-b02496146"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <svg
+                  class="icon-footer"
+                  fill="none"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <line
+                    x1="5"
+                    x2="19"
+                    y1="12"
+                    y2="12"
+                  />
+                </svg>
+                Linkedin
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/yoviealfa"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <svg
+                  class="icon-footer"
+                  fill="none"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <line
+                    x1="5"
+                    x2="19"
+                    y1="12"
+                    y2="12"
+                  />
+                </svg>
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/yoviealfaguistuta"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <svg
+                  class="icon-footer"
+                  fill="none"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <line
+                    x1="5"
+                    x2="19"
+                    y1="12"
+                    y2="12"
+                  />
+                </svg>
+                Github
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="col-3 col-sm-3 col-md-3"
+        >
+          <h6>
+            Contact
+          </h6>
+          <ul
+            class="footer-links"
+          >
+            <li>
+              <a
+                href="https://t.me/yoviealfaguistuta"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <svg
+                  class="icon-footer"
+                  fill="none"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <line
+                    x1="5"
+                    x2="19"
+                    y1="12"
+                    y2="12"
+                  />
+                </svg>
+                Telegram
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:yoviealfaguistuta@gmail.com"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <svg
+                  class="icon-footer"
+                  fill="none"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <line
+                    x1="5"
+                    x2="19"
+                    y1="12"
+                    y2="12"
+                  />
+                </svg>
+                Email
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.google.com/maps/place/Jl.+Pulau+Sanama,+Way+Halim+Permai,+Way+Halim,+Kota+Bandar+Lampung,+Lampung+35132/@-5.3854168,105.2722535,15.79z/data=!4m5!3m4!1s0x2e40db2242631409:0x44c47ee3b4619d4e!8m2!3d-5.3851969!4d105.2741399"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <svg
+                  class="icon-footer"
+                  fill="none"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <line
+                    x1="5"
+                    x2="19"
+                    y1="12"
+                    y2="12"
+                  />
+                </svg>
+                Address
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr
+        class="small"
+      />
+    </div>
+    <div
+      class="container footer-container"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col-md-12"
+        >
+          <div
+            class="costum-center"
+          >
+            <div
+              class="image-tech-footer"
+            >
+              <img
+                alt="React JS"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                width="25"
+              />
+              <img
+                alt="Go Languange"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/2560px-Go_Logo_Blue.svg.png"
+                width="35"
+              />
+            </div>
+            <div
+              class="footer-tech text-desc"
+            >
+              This site using 
+              <span
+                class="text-highlight"
+              >
+                 React JS 
+              </span>
+              and 
+              <span
+                class="text-highlight"
+              >
+                Go Language
+              </span>
+            </div>
+            <p
+              class="res-foot text-desc"
+            >
+              Feel free to get the source code from my github 
+              <a
+                class="footer-link-github"
+                href="https://github.com/yoviealfaguistuta/react-portofolio-frontend"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Client Side
+              </a>
+               - 
+              <a
+                class="footer-link-github"
+                href="https://github.com/yoviealfaguistuta/go-portofolio-api"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Server Side
+              </a>
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-md-12 col-sm-6 col-12 mb-0 pb-0 centered-footer-hosted border-top"
+        >
+          <p
+            class="copyright-text text-desc"
+          >
+            Powered and Hosted by 
+            <a
+              href="https://www.digitalocean.com/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="Digital Ocean"
+                class="digitalocean"
+                src="https://static.cdnlogo.com/logos/d/54/digitalocean.svg"
+              />
+               
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+`;
