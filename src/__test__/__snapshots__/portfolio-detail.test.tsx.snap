@@ -122,27 +122,27 @@ exports[`Render check after async 1`] = `
         class="row"
       >
         <svg
-          aria-labelledby="6mt0evd-aria"
+          aria-labelledby="kvugdh-aria"
           role="img"
           viewBox="0 0 700 300"
         >
           <title
-            id="6mt0evd-aria"
+            id="kvugdh-aria"
           >
             Loading...
           </title>
           <rect
-            clip-path="url(#6mt0evd-diff)"
+            clip-path="url(#kvugdh-diff)"
             height="100%"
             role="presentation"
-            style="fill: url(#6mt0evd-animated-diff);"
+            style="fill: url(#kvugdh-animated-diff);"
             width="100%"
             x="0"
             y="0"
           />
           <defs>
             <clippath
-              id="6mt0evd-diff"
+              id="kvugdh-diff"
             >
               <rect
                 height="32"
@@ -226,7 +226,7 @@ exports[`Render check after async 1`] = `
               />
             </clippath>
             <lineargradient
-              id="6mt0evd-animated-diff"
+              id="kvugdh-animated-diff"
             >
               <stop
                 offset="0%"

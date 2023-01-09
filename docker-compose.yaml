@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: portfolio-c
+    image: portfolio:latest
+    env_file:
+      - ./.env
+    build:
+      context: .
+    ports:
+      - 3101:80
