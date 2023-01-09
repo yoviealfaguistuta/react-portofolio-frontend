@@ -24,6 +24,6 @@ stop:
 	docker rmi portfolio:latest
 
 compose-up:
-	docker compose up
+	docker-compose up -d
 compose-down:
 	docker-compose down

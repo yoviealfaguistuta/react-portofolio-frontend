@@ -9,4 +9,7 @@ services:
     build:
       context: .
     ports:
-      - 3101:80
+      - 3101:3000
+    expose:
+        - 3101
+    restart: always
