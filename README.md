@@ -25,7 +25,7 @@
 This app is contains following technology:
 
 * ![React](https://img.shields.io/badge/-React-0D1117?style=flat&logo=react)&nbsp;
-* ![Typescript](https://img.shields.io/badge/-React-0D1117?style=flat&logo=typescript)&nbsp;
+* ![Typescript](https://img.shields.io/badge/-Typescript-0D1117?style=flat&logo=typescript)&nbsp;
 * ![Bootstrap](https://img.shields.io/badge/-Bootstrap-0D1117?style=flat&logo=bootstrap)&nbsp;
 * ![React_Router](https://img.shields.io/badge/React_Router-0D1117?style=flat&logo=react-router)&nbsp;
 * ![Jest](https://img.shields.io/badge/Jest-0D1117?style=flat&logo=Jest)&nbsp;
@@ -54,14 +54,15 @@ If you already have all the prerequisites you can follow this step:
  ```sh
  git clone https://github.com/yoviealfaguistuta/react-portofolio-frontend.git
  ```
-2. Install packages
-  ```sh
-  npm install
-  ```
-3. Navigate to the root project
+2. Navigate to the root project
   ```sh
   cd react-portofolio-frontend
   ```
+3. Install packages
+  ```sh
+  npm install
+  ```
+4. Modify .env.example with your configuration
 <!-- USAGE EXAMPLES -->
 ## Running
 
