@@ -1,4 +1,4 @@
-import PROFILE_IMAGE from 'assets/images/YovieAlfaguistuta.png';
+import PROFILE_IMAGE from 'assets/images/yovie-alfa-guistuta.jpg';
 import LARAVEL_IMAGE from 'assets/images/laravel.svg'
 import REACT_IMAGE from 'assets/images/react.svg'
 import GOLANG_IMAGE from 'assets/images/golang.svg'

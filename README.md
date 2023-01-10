@@ -22,12 +22,15 @@
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+This app is contains following technology:
 
 * ![React](https://img.shields.io/badge/-React-0D1117?style=flat&logo=react)&nbsp;
+* ![Typescript](https://img.shields.io/badge/-React-0D1117?style=flat&logo=typescript)&nbsp;
 * ![Bootstrap](https://img.shields.io/badge/-Bootstrap-0D1117?style=flat&logo=bootstrap)&nbsp;
 * ![React_Router](https://img.shields.io/badge/React_Router-0D1117?style=flat&logo=react-router)&nbsp;
 * ![Jest](https://img.shields.io/badge/Jest-0D1117?style=flat&logo=Jest)&nbsp;
+* ![Docker](https://img.shields.io/badge/Docker-0D1117?style=flat&logo=docker)&nbsp;
+* ![Makefile](https://img.shields.io/badge/Makefile-0D1117?style=flat&logo=makefile)&nbsp;
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -40,6 +43,8 @@ To run this, you need to install all of them in your machine:
 - Node JS
 - NPM or Yarn
 - Git
+- Makefile
+- Docker
 
 ### Installation 
 
@@ -51,7 +56,7 @@ If you already have all the prerequisites you can follow this step:
  ```
 2. Install packages
   ```sh
-  npm install or yarn install
+  npm install
   ```
 3. Navigate to the root project
   ```sh
@@ -63,17 +68,11 @@ If you already have all the prerequisites you can follow this step:
 You can run this app by doing following step:
 Using NPM
   ```sh
-  npm start 
-  ```
-Using Yarn
-  ```sh
-  yarn start 
+  make go 
   ```
  
 <!-- CONTRIBUTING -->
 ## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
