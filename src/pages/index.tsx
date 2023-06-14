@@ -7,8 +7,9 @@ import PortfolioCard from 'components/PortfolioCard';
 import CertificateCard from 'components/CertificateCard';
 import { DEFAULT_PROFILE_IMAGE } from 'constant/images';
 import { DEFAULT_CV_DOCUMENT } from 'constant/document';
-import { DEFAULT_AWESOME_AMAZING_JSON, DEFAULT_CLEAN_DESIGN_JSON, DEFAULT_COMPLEXITY_JSON } from 'constant/json';
+import { email } from 'constant/data';
 
+import { DEFAULT_AWESOME_AMAZING_JSON, DEFAULT_CLEAN_DESIGN_JSON, DEFAULT_COMPLEXITY_JSON } from 'constant/json';
 export const Home = () => {
     return (
         <>
@@ -21,7 +22,7 @@ export const Home = () => {
                             <About isFooter={false} />
                             <div className="button-main-about">
                                 <MainButton links={DEFAULT_CV_DOCUMENT} text={"Download Resume"} isFirst={true} />
-                                <MainButton links={"mailto:yoviealfaguistuta@gmail.com"} text={"Contact Me"} isFirst={false} />
+                                <MainButton links={`mailto:${email}`} text={"Contact Me"} isFirst={false} />
                             </div>
                         </div>
                         <div className="text-center">
@@ -106,7 +107,7 @@ export const Home = () => {
                         <p className="lead res-lead-kick"><span className="text-highlight">Hire me</span> and i will give you the <span className="text-highlight">best experience</span></p>
                         <div className="button-main-about">
                             <MainButton links={DEFAULT_CV_DOCUMENT} text={"Download Resume"} isFirst={true} />
-                            <MainButton links={"mailto:yoviealfaguistuta@gmail.com"} text={"Contact Me"} isFirst={false} />
+                            <MainButton links={`mailto:${email}`} text={"Contact Me"} isFirst={false} />
                         </div>
                     </div>
                 </div>

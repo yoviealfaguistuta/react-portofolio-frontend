@@ -42,7 +42,7 @@ const Header = () => {
                         <li><a href={linkedin} target="_blank" rel="noreferrer">Linkedin</a></li>
                         <li><a href={instagram} target="_blank" rel="noreferrer">Instagram</a></li>
                         <li><a href={github} target="_blank" rel="noreferrer">Github</a></li>
-                        <li className='btn-main-header'><a href={email} className='nopadding'>Contact Me</a></li>
+                        <li className='btn-main-header'><a href={`mailto:${email}`} className='nopadding'>Contact Me</a></li>
                     </ul>
                 </div>
                 <div className='css-nfe_wjr2 css-vfE_f3va'>
