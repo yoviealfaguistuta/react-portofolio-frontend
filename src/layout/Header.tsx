@@ -37,7 +37,7 @@ const Header = () => {
                 </button>
                 <div className="navbar-brand to-top css-vfE_f3va">
                     <ul className="nav navbar-nav menu-right css-ge_cja">
-                        <li><Link to={'/'}>Halaman Utama</Link></li>
+                        <li><Link to={'/'}>Home</Link></li>
                         <li><a href={DEFAULT_CV_DOCUMENT} target="_blank" rel="noreferrer">Resume</a></li>
                         <li><a href={linkedin} target="_blank" rel="noreferrer">Linkedin</a></li>
                         <li><a href={instagram} target="_blank" rel="noreferrer">Instagram</a></li>

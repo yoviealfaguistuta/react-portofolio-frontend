@@ -96,21 +96,33 @@
     color: #151e3a;
 }
 
-.theme-light .text-highlight,
-.text-highlight-detail {
-    color: var(--light-main-highlight-color) !important;
-    font-weight: bold;
-}
+
 
 .btn-main-header {
     white-space: nowrap !important;
 } 
 
-.theme-dark .text-highlight,
-.text-highlight-detail {
+
+.theme-dark .text-highlight {
     color: var(--main-highlight-color);
     font-weight: bold;
 }
+
+.theme-dark .text-highlight-detail {
+    color: var(--main-highlight-color);
+    font-weight: bold;
+}
+
+.theme-light .text-highlight {
+    color: var(--light-main-highlight-color);
+    font-weight: bold;
+}
+
+.theme-light .text-highlight-detail {
+    color: var(--light-main-highlight-color);
+    font-weight: bold;
+}
+
 
 .theme-dark .bg-main {
     background: var(--main-bg-color)

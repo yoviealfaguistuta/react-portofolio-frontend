@@ -21,7 +21,7 @@
 <br />
 
 <a href="http://yoviealfaguistuta.site">
-    <img src="https://i.ibb.co/16FjZv7/Screenshot-2023-01-10-084702.png" alt="Logo" width="100%" height="100%">
+    <img src="https://i.ibb.co/BBT9Rb7/Screenshot-2023-06-14-105738.png" alt="Logo" width="100%" height="100%">
 </a>
 
 <br />
@@ -76,8 +76,19 @@ cd react-portofolio-frontend
 npm install
 ```
 
-4. Modify .env.example with your configuration
- <!-- USAGE EXAMPLES -->
+4. Modify .env.example to .env / .env.development with your configuration
+```sh
+REACT_APP_BASE_URL=YOUR_BASE_URL
+REACT_APP_SERVER_BASE_URL=PORTFOLIO_API_BASE_URL
+REACT_APP_IMAGE_BASE_URL=PORTFOLIO_API_ASSETS_BASE_URL
+REACT_APP_SENTRY=YOUR_SENTRY_URL
+REACT_APP_LINKEDIN_URL=YOUR_LINKEDIN_ACCOUNT_URL
+REACT_APP_INSTAGRAM_URL=YOUR_INSTAGRAM_ACCOUNT_URL
+REACT_APP_GITHUB_URL=YOUR_GITHUB_ACCOUNT_URL
+REACT_APP_EMAIL_URL=MAIL_TO_YOUR_PRIMARY_EMAIL
+REACT_APP_TELEGRAM_URL=YOUR_TELEGRAM_PROFILE_URL
+REACT_APP_ADDRESS_URL=YOUR_GOOGLE_MAPS_URL
+```
 
 ## Running
 
