@@ -249,13 +249,6 @@
     transition: .25s cubic-bezier(.645, .045, .35)
 }
 
-*/.modal-open,
-.post-comment .post-body,
-.sr-only,
-svg:not(:root) {
-    overflow: hidden
-}
-
 pre,
 textarea {
     overflow: auto
@@ -528,7 +521,6 @@ th {
     padding: 0
 }
 
-/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
 
     blockquote,
@@ -6654,9 +6646,7 @@ button.close {
     }
 }
 
-/*!
- * 	Owl Carousel - Auto Height Plugin
- */
+
 .owl-height {
     -webkit-transition: height .5s ease-in-out;
     -moz-transition: height .5s ease-in-out;
@@ -6809,9 +6799,7 @@ button.close {
     z-index: 1
 }
 
-/*!
- * Animate.css v3.5.1
- */
+
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;

@@ -4,7 +4,7 @@ import {useState} from 'react';
 import Routes from 'routes';
 
 const App = () => {
-    const [theme, setTheme] = useState('light');
+    const [theme, setTheme] = useState('dark');
     return (
         <>
             <ThemeContext.Provider value={{ theme, setTheme }}>
