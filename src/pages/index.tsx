@@ -1,4 +1,3 @@
-import { Layout } from 'layout';
 import About from 'components/About';
 import MainButton from 'components/MainButton';
 import SocialButton from 'components/SocialButton';
@@ -12,20 +11,20 @@ import { DEFAULT_AWESOME_AMAZING_JSON, DEFAULT_CLEAN_DESIGN_JSON, DEFAULT_COMPLE
 
 export const Home = () => {
     return (
-        <Layout>
+        <>
             <section className="hero-fullscreen bg-main parallax">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-sm-8">
+                <div className="container css-nf_gi4ga">
+                    <div className="css-jge_cvjw">
+                        <div className="css-fgE_c">
                             <h3 className='text-highlight hello-for-responsive'>Hello, I am</h3>
                             <h1 className='font-bold text-title pb-0 main-title-res'>Yovie Alfa Guistuta</h1>
-                            <About isFooter={false}/>
+                            <About isFooter={false} />
                             <div className="button-main-about">
                                 <MainButton links={DEFAULT_CV_DOCUMENT} text={"Download Resume"} isFirst={true} />
                                 <MainButton links={"mailto:yoviealfaguistuta@gmail.com"} text={"Contact Me"} isFirst={false} />
                             </div>
                         </div>
-                        <div className="col-md-4 text-center">
+                        <div className="text-center">
                             <img className='image-about' src={DEFAULT_PROFILE_IMAGE} alt="Yovie Alfa Guistuta" />
                         </div>
                     </div>
@@ -77,24 +76,22 @@ export const Home = () => {
                 </div>
             </section>
 
-            <section id="works" className="bg-main pt100 pb110">
-                <div className="container">
-                    <div className="row text-center">
-                        <div className="col-md-12 text-center pb20">
-                            <h2 className='text-title'>My Greatest Portfolio</h2>
-                            <p className="text-desc">The following is the system that I have made so far. It will <span className="text-highlight">keep growing</span></p>
-                        </div>
-                        <div className="portfolio" data-gap={20}>
-                            <PortfolioCard />
-                        </div>
+            <section className="bg-main pt100 pb110">
+                <div className="text-center">
+                    <div className="text-center pb20">
+                        <h2 className='text-title'>My Greatest Portfolio</h2>
+                        <p className="text-desc">The following is the system that I have made so far. It will <span className="text-highlight">keep growing</span></p>
+                    </div>
+                    <div className="container">
+                        <PortfolioCard />
                     </div>
                 </div>
             </section>
 
-            <section id="works" className="bg-dark pt100 pb110">
+            <section className="bg-dark pt100 pb110">
                 <div className="container">
-                    <div className="row text-center">
-                        <div className="col-md-12 text-center pb20">
+                    <div className="text-center">
+                        <div className="text-center pb20">
                             <h2 className='text-title'>My Certificate and Awards</h2>
                             <p className="text-desc">There is <span className="text-highlight">competitions</span>, <span className="text-highlight">training</span> and <span className="text-highlight">workshops</span>.</p>
                         </div>
@@ -102,20 +99,18 @@ export const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className="parallax bg-main pt40 pb40">
-                <div className="container pt100 pb100">
-                    <div className="row pt20">
-                        <div className="col-md-12 text-center">
-                            <h2 className="text-title">Ready to <span className="bold text-highlight">Kickstart</span> Your Plans ?..</h2>
-                            <p className="lead res-lead-kick"><span className="text-highlight">Hire me</span> and i will give you the <span className="text-highlight">best experience</span></p>
-                            <div className="button-main-about">
-                                <MainButton links={DEFAULT_CV_DOCUMENT} text={"Download Resume"} isFirst={true} />
-                                <MainButton links={"mailto:yoviealfaguistuta@gmail.com"} text={"Contact Me"} isFirst={false} />
-                            </div>
+            <section className="container bg-main pt100 pb110">
+                <div className="container">
+                    <div className="text-center">
+                        <h2 className="text-title">Ready to <span className="bold text-highlight">Kickstart</span> Your Plans ?..</h2>
+                        <p className="lead res-lead-kick"><span className="text-highlight">Hire me</span> and i will give you the <span className="text-highlight">best experience</span></p>
+                        <div className="button-main-about">
+                            <MainButton links={DEFAULT_CV_DOCUMENT} text={"Download Resume"} isFirst={true} />
+                            <MainButton links={"mailto:yoviealfaguistuta@gmail.com"} text={"Contact Me"} isFirst={false} />
                         </div>
                     </div>
                 </div>
             </section>
-        </Layout>
+        </>
     );
 };

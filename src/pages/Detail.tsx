@@ -22,22 +22,22 @@ const Detail = () => {
     }, [id]);
 
     return (
-        <Layout>
+        <>
             {(DataResponse != null) ?
-                <section className="bg-dark pt140 pb50 text-left">
+                <section className="bg-main pt140 pb50 text-left">
                     <div className="container">
-                        <div className="row">
-                            <div className="col-md-12 text-center">
+                        <div className="">
+                            <div className="text-center">
                                 <h2 className='text-title bold'>{DataResponse.title}</h2>
                                 <p className="text-desc">{DataResponse.descriptions}</p>
                             </div>
-                            <div className="col-md-8 mt20 mb40">
+                            <div className="mt20 mb40">
                                 <div className="carousel lightbox" data-autoplay="false" data-speed={4000} data-touch-drag="true" data-loop="false">
                                     <Carousel showStatus={false} showIndicators={false}>
                                         {
                                             DataResponse.images && DataResponse.images.map((item, index) => {
                                                 return (
-                                                    <div key={index}>
+                                                    <div key={index + item.id}>
                                                         <img alt={DataResponse.title} src={SERVER_IMAGE_URL + item.images} />
                                                     </div>
                                                 )
@@ -46,7 +46,7 @@ const Detail = () => {
                                     </Carousel>
                                 </div>
                             </div>
-                            <div className="col-md-4 project-sidebar">
+                            <div className="project-sidebar">
                                 <div>
                                     <h5 className='text-highlight'><strong>Project Info</strong></h5>
                                     <p className='text-project-info'>{DataResponse.project_info}</p>
@@ -137,7 +137,7 @@ const Detail = () => {
                     </div>
                 </section>
             }
-        </Layout>
+        </>
     )
 };
 

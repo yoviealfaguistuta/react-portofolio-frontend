@@ -49,10 +49,10 @@ const PortfolioCard = () => {
     }
 
     return (
-        <div className="container">
+        <div className="css-ehT_g8a">
             {(DataResponse != null && DataResponse?.data.length > 0) ? DataResponse?.data.map((item, index) => {
                 return (
-                    <div key={index} className="col-12 col-md-4 col-sm-6" style={{ marginBottom: 40 }}>
+                    <div key={index + item.id + item.title} className="css-eVFG_j4ga-c">
                         <Link to={"/detail/" + item.id}>
                             <div className="portfolio-item wh-100">
                                 <div className="item-caption">
@@ -74,7 +74,8 @@ const PortfolioCard = () => {
                 (DataResponse != null && (currentPage || 0) < DataResponse?.meta.page_count) ?
                 <button onClick={() => setcurrentPage((currentPage || 1) + 1)} className='btn-main btn-about-space'>Load More Project</button>
                 :
-                <span className="text-desc">~ All portfolio has been show up ~</span>
+                // <span className="text-desc">~ All portfolio has been show up ~</span>
+                null
             }
         </div>
     )

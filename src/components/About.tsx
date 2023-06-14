@@ -19,7 +19,7 @@ const About = ({ isFooter } : Props) => {
     return (
         <>
             {DataResponse?.about != null ? DataResponse?.about !== 'error' ? 
-                    <span className={`${(!isFooter) ? 'lead text-desc' : ''} my-msg-about desc-about text-desc-main-align`}>{DataResponse.about}</span>
+                    <p className={`${(!isFooter) ? 'lead text-desc' : ''} my-msg-about desc-about text-desc-main-align css-fn_ri4a`}>{DataResponse.about}</p>
                 :
                     <>
                         <h4 className="text-error">Oops !.. Sepertinya Ada Yang Salah</h4>

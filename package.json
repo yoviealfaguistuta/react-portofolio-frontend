@@ -20,6 +20,7 @@
     "react-content-loader": "^6.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
+    "react-modern-drawer": "^1.2.0",
     "react-responsive-carousel": "^3.2.22",
     "react-router-dom": "^6.3.0",
     "react-scripts": "^5.0.1",
